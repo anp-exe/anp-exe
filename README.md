@@ -18,7 +18,7 @@
 <!-- Animated Cat Running Animation -->
 <div align="center">
   
-![Cat Walking](https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif)
+![Cat Walking](https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExcGtkNTBudTV3MXh1OGl6bnFjbWJncmRqZmVrcTViMDQyNzRiYTEwYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/JIX9t2j0ZTN9S/giphy.gif)
 
 </div>
 
@@ -44,6 +44,7 @@ class Developer:
 ## 💼 Mini CV
 
 ### 🎓 Education
+> **Note**: Update with your actual education details
 - **[Your Degree/Field]** - [Your University]
 - Focus: Data Science, Mathematics, Computer Science
 - Relevant Coursework: Machine Learning, Statistical Analysis, Data Structures
@@ -126,7 +127,9 @@ class Developer:
 
 <div align="center">
 
-[![DataCamp](https://img.shields.io/badge/DataCamp_Profile-FFB6C1?style=for-the-badge&logo=datacamp&logoColor=white)](https://www.datacamp.com/profile/anp-exe)
+[![DataCamp](https://img.shields.io/badge/DataCamp_Profile-FFB6C1?style=for-the-badge&logo=datacamp&logoColor=white)](https://www.datacamp.com/profile/[YOUR-USERNAME])
+
+> **Note**: Replace `[YOUR-USERNAME]` with your actual DataCamp username
 
 *Check out my learning progress and certifications!* 🌸
 
