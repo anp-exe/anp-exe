@@ -2,13 +2,13 @@
 <p style="background-color:#FFE4E8; padding:20px; border-radius:10px;">
 </p>
 
-## Hello, I'm Anna! ✨ 
-
-<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="700">
-
+## Hello, I'm Anna! ✨
 <div style="display: flex; justify-content: center; gap: 20px; margin: 20px 0;">
   <img src="https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif" width="100" alt="Running Cat">
 </div>
+
+
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="700">
 
 <!-- Running Cat Silhouettes Animation -->
 <p align="center">
@@ -28,6 +28,11 @@
   <img src="https://img.shields.io/badge/Linux-FFB6C1?style=for-the-badge&logo=linux&logoColor=white" alt="Linux">
   <img src="https://img.shields.io/badge/WSL-FFB6C1?style=for-the-badge&logo=windows&logoColor=white" alt="WSL">
 </p>
+
+---
+
+<!--START_SECTION:waka-->
+<!--END_SECTION:waka-->
 
 ---
 
