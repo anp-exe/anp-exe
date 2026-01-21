@@ -7,8 +7,8 @@
     .cat4 { animation: moveAcross 7s linear infinite; animation-delay: -1s; }
 
     @keyframes moveAcross {
-      0% { transform: translateX(820px); }
-      100% { transform: translateX(-150px); }
+      0% { transform: translateX(-150px); }
+      100% { transform: translateX(820px); }
     }
 
     /* Running leg animations */
@@ -18,20 +18,20 @@
     .front-leg-2 { animation: frontLeg2 0.2s ease-in-out infinite alternate; transform-origin: 65px 55px; }
 
     @keyframes backLeg1 {
-      0% { transform: rotate(-40deg); }
-      100% { transform: rotate(30deg); }
+      0% { transform: rotate(40deg); }
+      100% { transform: rotate(-30deg); }
     }
     @keyframes backLeg2 {
-      0% { transform: rotate(30deg); }
-      100% { transform: rotate(-40deg); }
+      0% { transform: rotate(-30deg); }
+      100% { transform: rotate(40deg); }
     }
     @keyframes frontLeg1 {
-      0% { transform: rotate(35deg); }
-      100% { transform: rotate(-35deg); }
-    }
-    @keyframes frontLeg2 {
       0% { transform: rotate(-35deg); }
       100% { transform: rotate(35deg); }
+    }
+    @keyframes frontLeg2 {
+      0% { transform: rotate(35deg); }
+      100% { transform: rotate(-35deg); }
     }
 
     /* Body bounce while running */
