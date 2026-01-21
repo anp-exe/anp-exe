@@ -129,23 +129,29 @@
   <g class="cat3" transform="translate(110,0) scale(-1,1)">
     <g class="cat-body" fill="#FF1493">
       <ellipse cx="45" cy="48" rx="32" ry="16"/>
-      <circle cx="82" cy="38" r="14"/>
-      <!-- Ears - taller, pointier -->
-      <polygon points="70,28 75,6 80,28"/>
-      <polygon points="72,27 75,8 78,27" fill="#C71585"/>
-      <polygon points="86,28 91,6 96,28"/>
-      <polygon points="88,27 91,8 94,27" fill="#C71585"/>
-      <!-- Muzzle -->
-      <ellipse cx="94" cy="42" rx="6" ry="5" fill="#FFB6C1"/>
-      <!-- Eye -->
-      <circle cx="85" cy="35" r="3.5" fill="#fff"/>
-      <circle cx="86" cy="35" r="1.8" fill="#333"/>
-      <!-- Nose -->
-      <polygon points="94,39 91,43 97,43" fill="#C71585"/>
+      <!-- Head - front facing -->
+      <circle cx="82" cy="36" r="16"/>
+      <!-- Ears - forward facing -->
+      <polygon points="66,34 71,12 76,34"/>
+      <polygon points="68,32 71,14 74,32" fill="#C71585"/>
+      <polygon points="88,34 93,12 98,34"/>
+      <polygon points="90,32 93,14 96,32" fill="#C71585"/>
+      <!-- Big cute eyes -->
+      <circle cx="75" cy="34" r="6" fill="#fff"/>
+      <circle cx="89" cy="34" r="6" fill="#fff"/>
+      <circle cx="76" cy="35" r="3.5" fill="#333"/>
+      <circle cx="90" cy="35" r="3.5" fill="#333"/>
+      <circle cx="77" cy="33" r="1.2" fill="#fff"/>
+      <circle cx="91" cy="33" r="1.2" fill="#fff"/>
+      <!-- Cute nose -->
+      <ellipse cx="82" cy="41" rx="2.5" ry="2" fill="#C71585"/>
+      <!-- Cute mouth -->
+      <path d="M 78 44 Q 82 48 86 44" stroke="#C71585" stroke-width="1.2" fill="none"/>
       <!-- Whiskers -->
-      <line x1="98" y1="40" x2="110" y2="37" stroke="#C71585" stroke-width="1.2"/>
-      <line x1="98" y1="43" x2="112" y2="43" stroke="#C71585" stroke-width="1.2"/>
-      <line x1="98" y1="46" x2="110" y2="49" stroke="#C71585" stroke-width="1.2"/>
+      <line x1="68" y1="41" x2="58" y2="38" stroke="#C71585" stroke-width="1.2"/>
+      <line x1="68" y1="44" x2="56" y2="44" stroke="#C71585" stroke-width="1.2"/>
+      <line x1="96" y1="41" x2="106" y2="38" stroke="#C71585" stroke-width="1.2"/>
+      <line x1="96" y1="44" x2="108" y2="44" stroke="#C71585" stroke-width="1.2"/>
     </g>
     <rect class="back-leg-1" x="14" y="54" width="7" height="24" rx="3.5" fill="#FF1493"/>
     <rect class="back-leg-2" x="26" y="54" width="7" height="24" rx="3.5" fill="#FF1493"/>
@@ -158,23 +164,29 @@
   <g class="cat4" transform="translate(85,0) scale(-1,1)">
     <g class="cat-body" fill="#DB7093">
       <ellipse cx="38" cy="52" rx="25" ry="13"/>
-      <circle cx="66" cy="44" r="11"/>
-      <!-- Ears - taller, pointier -->
-      <polygon points="56,36 60,18 64,36"/>
-      <polygon points="57,35 60,19 63,35" fill="#C71585"/>
-      <polygon points="70,36 74,18 78,36"/>
-      <polygon points="71,35 74,19 77,35" fill="#C71585"/>
-      <!-- Muzzle -->
-      <ellipse cx="76" cy="48" rx="4.5" ry="3.5" fill="#FFB6C1"/>
-      <!-- Eye -->
-      <circle cx="68" cy="42" r="2.8" fill="#fff"/>
-      <circle cx="69" cy="42" r="1.4" fill="#333"/>
-      <!-- Nose -->
-      <polygon points="76,46 74,49 78,49" fill="#C71585"/>
+      <!-- Head - front facing -->
+      <circle cx="66" cy="42" r="13"/>
+      <!-- Ears - forward facing -->
+      <polygon points="53,40 57,20 61,40"/>
+      <polygon points="54,38 57,22 60,38" fill="#C71585"/>
+      <polygon points="71,40 75,20 79,40"/>
+      <polygon points="72,38 75,22 78,38" fill="#C71585"/>
+      <!-- Big cute eyes -->
+      <circle cx="60" cy="40" r="4.5" fill="#fff"/>
+      <circle cx="72" cy="40" r="4.5" fill="#fff"/>
+      <circle cx="61" cy="41" r="2.8" fill="#333"/>
+      <circle cx="73" cy="41" r="2.8" fill="#333"/>
+      <circle cx="62" cy="39" r="1" fill="#fff"/>
+      <circle cx="74" cy="39" r="1" fill="#fff"/>
+      <!-- Cute nose -->
+      <ellipse cx="66" cy="46" rx="2" ry="1.5" fill="#C71585"/>
+      <!-- Cute mouth -->
+      <path d="M 63 49 Q 66 52 69 49" stroke="#C71585" stroke-width="1" fill="none"/>
       <!-- Whiskers -->
-      <line x1="79" y1="47" x2="88" y2="45" stroke="#C71585" stroke-width="0.9"/>
-      <line x1="79" y1="49" x2="89" y2="49" stroke="#C71585" stroke-width="0.9"/>
-      <line x1="79" y1="51" x2="88" y2="53" stroke="#C71585" stroke-width="0.9"/>
+      <line x1="55" y1="46" x2="46" y2="44" stroke="#C71585" stroke-width="0.9"/>
+      <line x1="55" y1="48" x2="45" y2="48" stroke="#C71585" stroke-width="0.9"/>
+      <line x1="77" y1="46" x2="86" y2="44" stroke="#C71585" stroke-width="0.9"/>
+      <line x1="77" y1="48" x2="87" y2="48" stroke="#C71585" stroke-width="0.9"/>
     </g>
     <rect class="back-leg-1" x="14" y="56" width="6" height="18" rx="3" fill="#DB7093"/>
     <rect class="back-leg-2" x="24" y="56" width="6" height="18" rx="3" fill="#DB7093"/>
