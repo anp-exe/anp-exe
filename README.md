@@ -10,6 +10,11 @@
   <img src="https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif" width="100" alt="Running Cat">
 </div>
 
+<!-- Running Cat Silhouettes Animation -->
+<p align="center">
+  <img src="./assets/running-cats.svg" width="100%" alt="Running cats animation">
+</p>
+
 ---
 <p align="center">
   <img src="https://img.shields.io/badge/Python-FFB6C1?style=for-the-badge&logo=python&logoColor=white" alt="Python">

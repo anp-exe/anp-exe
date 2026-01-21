@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 80" width="800" height="80">
+  <style>
+    .cat1 { animation: run1 8s linear infinite; }
+    .cat2 { animation: run2 10s linear infinite; }
+    .cat3 { animation: run3 6s linear infinite; }
+    .cat4 { animation: run4 9s linear infinite; }
+    .cat5 { animation: run5 7s linear infinite; }
+
+    @keyframes run1 {
+      0% { transform: translateX(850px); }
+      100% { transform: translateX(-120px); }
+    }
+    @keyframes run2 {
+      0% { transform: translateX(900px); }
+      100% { transform: translateX(-120px); }
+    }
+    @keyframes run3 {
+      0% { transform: translateX(820px); }
+      100% { transform: translateX(-120px); }
+    }
+    @keyframes run4 {
+      0% { transform: translateX(880px); }
+      100% { transform: translateX(-120px); }
+    }
+    @keyframes run5 {
+      0% { transform: translateX(950px); }
+      100% { transform: translateX(-120px); }
+    }
+  </style>
+
+  <!-- Background -->
+  <rect width="800" height="80" fill="#FFE4E8" rx="10"/>
+
+  <!-- Cat 1 - Running pose stretched -->
+  <g class="cat1" fill="#FF69B4">
+    <ellipse cx="50" cy="45" rx="22" ry="12"/> <!-- Body -->
+    <circle cx="75" cy="38" r="10"/> <!-- Head -->
+    <polygon points="70,30 73,20 78,30"/> <!-- Ear left -->
+    <polygon points="78,28 82,18 86,28"/> <!-- Ear right -->
+    <ellipse cx="28" cy="52" rx="3" ry="8" transform="rotate(-30 28 52)"/> <!-- Back leg -->
+    <ellipse cx="38" cy="55" rx="3" ry="10" transform="rotate(20 38 55)"/> <!-- Back leg 2 -->
+    <ellipse cx="62" cy="55" rx="3" ry="10" transform="rotate(-25 62 55)"/> <!-- Front leg -->
+    <ellipse cx="72" cy="52" rx="3" ry="8" transform="rotate(15 72 52)"/> <!-- Front leg 2 -->
+    <path d="M 25 42 Q 10 35 5 45" stroke="#FF69B4" stroke-width="3" fill="none"/> <!-- Tail -->
+  </g>
+
+  <!-- Cat 2 - Slightly different pose, smaller -->
+  <g class="cat2" fill="#FFB6C1">
+    <ellipse cx="45" cy="50" rx="18" ry="10"/> <!-- Body -->
+    <circle cx="65" cy="44" r="8"/> <!-- Head -->
+    <polygon points="61,38 63,30 67,38"/> <!-- Ear left -->
+    <polygon points="67,36 70,28 74,36"/> <!-- Ear right -->
+    <ellipse cx="28" cy="56" rx="2.5" ry="7" transform="rotate(-20 28 56)"/> <!-- Back leg -->
+    <ellipse cx="36" cy="58" rx="2.5" ry="8" transform="rotate(25 36 58)"/> <!-- Back leg 2 -->
+    <ellipse cx="54" cy="58" rx="2.5" ry="8" transform="rotate(-30 54 58)"/> <!-- Front leg -->
+    <ellipse cx="62" cy="55" rx="2.5" ry="6" transform="rotate(10 62 55)"/> <!-- Front leg 2 -->
+    <path d="M 24 48 Q 12 42 8 50" stroke="#FFB6C1" stroke-width="2.5" fill="none"/> <!-- Tail -->
+  </g>
+
+  <!-- Cat 3 - Larger cat, different pink -->
+  <g class="cat3" fill="#FF1493">
+    <ellipse cx="55" cy="42" rx="25" ry="14"/> <!-- Body -->
+    <circle cx="82" cy="34" r="11"/> <!-- Head -->
+    <polygon points="76,24 80,14 85,24"/> <!-- Ear left -->
+    <polygon points="84,22 89,12 94,22"/> <!-- Ear right -->
+    <ellipse cx="30" cy="50" rx="3.5" ry="10" transform="rotate(-35 30 50)"/> <!-- Back leg -->
+    <ellipse cx="42" cy="54" rx="3.5" ry="12" transform="rotate(15 42 54)"/> <!-- Back leg 2 -->
+    <ellipse cx="68" cy="54" rx="3.5" ry="12" transform="rotate(-20 68 54)"/> <!-- Front leg -->
+    <ellipse cx="80" cy="50" rx="3.5" ry="9" transform="rotate(20 80 50)"/> <!-- Front leg 2 -->
+    <path d="M 28 38 Q 10 28 5 40" stroke="#FF1493" stroke-width="4" fill="none"/> <!-- Tail up -->
+  </g>
+
+  <!-- Cat 4 - Medium cat -->
+  <g class="cat4" fill="#DB7093">
+    <ellipse cx="48" cy="48" rx="20" ry="11"/> <!-- Body -->
+    <circle cx="70" cy="42" r="9"/> <!-- Head -->
+    <polygon points="65,34 68,25 72,34"/> <!-- Ear left -->
+    <polygon points="72,32 76,23 80,32"/> <!-- Ear right -->
+    <ellipse cx="28" cy="54" rx="3" ry="8" transform="rotate(-25 28 54)"/> <!-- Back leg -->
+    <ellipse cx="38" cy="57" rx="3" ry="10" transform="rotate(20 38 57)"/> <!-- Back leg 2 -->
+    <ellipse cx="58" cy="57" rx="3" ry="10" transform="rotate(-25 58 57)"/> <!-- Front leg -->
+    <ellipse cx="68" cy="54" rx="3" ry="7" transform="rotate(15 68 54)"/> <!-- Front leg 2 -->
+    <path d="M 26 45 Q 12 50 8 42" stroke="#DB7093" stroke-width="3" fill="none"/> <!-- Tail curved -->
+  </g>
+
+  <!-- Cat 5 - Small kitten -->
+  <g class="cat5" fill="#FFC0CB">
+    <ellipse cx="40" cy="52" rx="15" ry="8"/> <!-- Body -->
+    <circle cx="56" cy="47" r="7"/> <!-- Head -->
+    <polygon points="52,42 54,35 58,42"/> <!-- Ear left -->
+    <polygon points="58,40 61,33 65,40"/> <!-- Ear right -->
+    <ellipse cx="26" cy="57" rx="2" ry="6" transform="rotate(-20 26 57)"/> <!-- Back leg -->
+    <ellipse cx="32" cy="59" rx="2" ry="7" transform="rotate(25 32 59)"/> <!-- Back leg 2 -->
+    <ellipse cx="48" cy="59" rx="2" ry="7" transform="rotate(-30 48 59)"/> <!-- Front leg -->
+    <ellipse cx="54" cy="56" rx="2" ry="5" transform="rotate(10 54 56)"/> <!-- Front leg 2 -->
+    <path d="M 23 50 Q 14 45 10 52" stroke="#FFC0CB" stroke-width="2" fill="none"/> <!-- Tail -->
+  </g>
+</svg>
+
