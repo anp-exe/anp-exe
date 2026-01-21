@@ -53,7 +53,7 @@
   <rect width="800" height="100" fill="#FFE4E8" rx="10"/>
 
   <!-- Cat 1 - Hot Pink -->
-  <g class="cat1">
+  <g class="cat1" transform="translate(90,0) scale(-1,1)">
     <g class="cat-body" fill="#FF69B4">
       <!-- Body -->
       <ellipse cx="40" cy="50" rx="28" ry="14"/>
@@ -78,7 +78,7 @@
   </g>
 
   <!-- Cat 2 - Light Pink (smaller, faster) -->
-  <g class="cat2">
+  <g class="cat2" transform="translate(75,0) scale(-1,1)">
     <g class="cat-body" fill="#FFB6C1">
       <ellipse cx="35" cy="55" rx="22" ry="11"/>
       <circle cx="60" cy="48" r="10"/>
@@ -96,7 +96,7 @@
   </g>
 
   <!-- Cat 3 - Deep Pink (larger, slower) -->
-  <g class="cat3">
+  <g class="cat3" transform="translate(110,0) scale(-1,1)">
     <g class="cat-body" fill="#FF1493">
       <ellipse cx="45" cy="48" rx="32" ry="16"/>
       <circle cx="82" cy="38" r="14"/>
@@ -114,7 +114,7 @@
   </g>
 
   <!-- Cat 4 - Pale Violet Red -->
-  <g class="cat4">
+  <g class="cat4" transform="translate(85,0) scale(-1,1)">
     <g class="cat-body" fill="#DB7093">
       <ellipse cx="38" cy="52" rx="25" ry="13"/>
       <circle cx="66" cy="44" r="11"/>
