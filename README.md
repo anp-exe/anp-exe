@@ -4,25 +4,28 @@
 
 ## Hello, I'm Anna! ✨ 
 
-<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="700">
-
-<div style="display: flex; justify-content: center; gap: 20px; margin: 20px 0;">
-  <img src="https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif" width="100" alt="Running Cat">
-</div>
-
----
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-FFB6C1?style=for-the-badge&logo=python&logoColor=white" alt="Python">
-  <img src="https://img.shields.io/badge/Jupyter-FFB6C1?style=for-the-badge&logo=jupyter&logoColor=white" alt="Jupyter">
-  <img src="https://img.shields.io/badge/HTML5-FFB6C1?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
-  <img src="https://img.shields.io/badge/CSS3-FFB6C1?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
-  <img src="https://img.shields.io/badge/Data_Science-FFB6C1?style=for-the-badge&logo=databricks&logoColor=white" alt="Data Science">
-  <img src="https://img.shields.io/badge/AI-FFB6C1?style=for-the-badge&logo=tensorflow&logoColor=white" alt="AI">
-  <img src="https://img.shields.io/badge/MATLAB-FFB6C1?style=for-the-badge&logo=mathworks&logoColor=white" alt="MATLAB">
-  <img src="https://img.shields.io/badge/PyCharm-FFB6C1?style=for-the-badge&logo=pycharm&logoColor=white" alt="PyCharm">
-  <img src="https://img.shields.io/badge/Linux-FFB6C1?style=for-the-badge&logo=linux&logoColor=white" alt="Linux">
-  <img src="https://img.shields.io/badge/WSL-FFB6C1?style=for-the-badge&logo=windows&logoColor=white" alt="WSL">
-</p>
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="800">
+      <div style="display: flex; justify-content: center; gap: 20px; margin: 20px 0;">
+        <img src="https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif" width="100" alt="Running Cat">
+      </div>
+    </td>
+    <td align="center" valign="middle">
+      <img src="https://img.shields.io/badge/Python-FFB6C1?style=for-the-badge&logo=python&logoColor=white" alt="Python"><br>
+      <img src="https://img.shields.io/badge/Jupyter-FFB6C1?style=for-the-badge&logo=jupyter&logoColor=white" alt="Jupyter"><br>
+      <img src="https://img.shields.io/badge/HTML5-FFB6C1?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5"><br>
+      <img src="https://img.shields.io/badge/CSS3-FFB6C1?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3"><br>
+      <img src="https://img.shields.io/badge/Data_Science-FFB6C1?style=for-the-badge&logo=databricks&logoColor=white" alt="Data Science"><br>
+      <img src="https://img.shields.io/badge/AI-FFB6C1?style=for-the-badge&logo=tensorflow&logoColor=white" alt="AI"><br>
+      <img src="https://img.shields.io/badge/MATLAB-FFB6C1?style=for-the-badge&logo=mathworks&logoColor=white" alt="MATLAB"><br>
+      <img src="https://img.shields.io/badge/PyCharm-FFB6C1?style=for-the-badge&logo=pycharm&logoColor=white" alt="PyCharm"><br>
+      <img src="https://img.shields.io/badge/Linux-FFB6C1?style=for-the-badge&logo=linux&logoColor=white" alt="Linux"><br>
+      <img src="https://img.shields.io/badge/WSL-FFB6C1?style=for-the-badge&logo=windows&logoColor=white" alt="WSL">
+    </td>
+  </tr>
+</table>
 
 ---
 
