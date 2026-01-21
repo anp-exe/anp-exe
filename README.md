@@ -1,5 +1,5 @@
 
-<p align="center" style="background-color:#FFE4E8; padding:20px; border-radius:10px;">
+<p style="background-color:#FFE4E8; padding:20px; border-radius:10px;">
 </p>
 
 # 🐱 ✨ Hello, I'm ANP! ✨ 🐱
