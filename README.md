@@ -1,6 +1,5 @@
 
 <p align="center" style="background-color:#FFE4E8; padding:20px; border-radius:10px;">
-  Your content here
 </p>
 
 # 🐱 ✨ Hello, I'm ANP! ✨ 🐱
