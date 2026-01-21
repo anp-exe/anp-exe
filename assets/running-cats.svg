@@ -1,0 +1,201 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 100" width="800" height="100">
+  <style>
+    /* Move cats across screen */
+    .cat1 { animation: moveAcross 8s linear infinite; }
+    .cat2 { animation: moveAcross 6s linear infinite; animation-delay: -2s; }
+    .cat3 { animation: moveAcross 10s linear infinite; animation-delay: -4s; }
+    .cat4 { animation: moveAcross 7s linear infinite; animation-delay: -1s; }
+
+    @keyframes moveAcross {
+      0% { transform: translateX(-150px); }
+      100% { transform: translateX(820px); }
+    }
+
+    /* Running leg animations */
+    .back-leg-1 { animation: backLeg1 0.2s ease-in-out infinite alternate; transform-origin: 15px 55px; }
+    .back-leg-2 { animation: backLeg2 0.2s ease-in-out infinite alternate; transform-origin: 25px 55px; }
+    .front-leg-1 { animation: frontLeg1 0.2s ease-in-out infinite alternate; transform-origin: 55px 55px; }
+    .front-leg-2 { animation: frontLeg2 0.2s ease-in-out infinite alternate; transform-origin: 65px 55px; }
+
+    @keyframes backLeg1 {
+      0% { transform: rotate(40deg); }
+      100% { transform: rotate(-30deg); }
+    }
+    @keyframes backLeg2 {
+      0% { transform: rotate(-30deg); }
+      100% { transform: rotate(40deg); }
+    }
+    @keyframes frontLeg1 {
+      0% { transform: rotate(-35deg); }
+      100% { transform: rotate(35deg); }
+    }
+    @keyframes frontLeg2 {
+      0% { transform: rotate(35deg); }
+      100% { transform: rotate(-35deg); }
+    }
+
+    /* Body bounce while running */
+    .cat-body { animation: bodyBounce 0.2s ease-in-out infinite; }
+    @keyframes bodyBounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-3px); }
+    }
+
+    /* Tail swish */
+    .tail { animation: tailSwish 0.3s ease-in-out infinite alternate; transform-origin: 12px 50px; }
+    @keyframes tailSwish {
+      0% { transform: rotate(-15deg); }
+      100% { transform: rotate(15deg); }
+    }
+  </style>
+
+  <!-- Background -->
+  <rect width="800" height="100" fill="#FFE4E8" rx="10"/>
+
+  <!-- Cat 1 - Hot Pink -->
+  <g class="cat1" transform="translate(90,0) scale(-1,1)">
+    <g class="cat-body" fill="#FF69B4">
+      <!-- Body -->
+      <ellipse cx="40" cy="50" rx="28" ry="14"/>
+      <!-- Head - front facing -->
+      <circle cx="72" cy="40" r="14"/>
+      <!-- Ears - forward facing -->
+      <polygon points="58,38 62,18 66,38"/>
+      <polygon points="59,36 62,20 65,36" fill="#FF1493"/>
+      <polygon points="78,38 82,18 86,38"/>
+      <polygon points="79,36 82,20 85,36" fill="#FF1493"/>
+      <!-- Big cute eyes -->
+      <circle cx="66" cy="38" r="5" fill="#fff"/>
+      <circle cx="78" cy="38" r="5" fill="#fff"/>
+      <circle cx="67" cy="39" r="3" fill="#333"/>
+      <circle cx="79" cy="39" r="3" fill="#333"/>
+      <circle cx="68" cy="37" r="1" fill="#fff"/>
+      <circle cx="80" cy="37" r="1" fill="#fff"/>
+      <!-- Cute nose -->
+      <ellipse cx="72" cy="44" rx="2" ry="1.5" fill="#FF1493"/>
+      <!-- Cute mouth -->
+      <path d="M 69 47 Q 72 50 75 47" stroke="#FF1493" stroke-width="1" fill="none"/>
+      <!-- Whiskers -->
+      <line x1="60" y1="44" x2="50" y2="42" stroke="#FF1493" stroke-width="1"/>
+      <line x1="60" y1="46" x2="49" y2="46" stroke="#FF1493" stroke-width="1"/>
+      <line x1="84" y1="44" x2="94" y2="42" stroke="#FF1493" stroke-width="1"/>
+      <line x1="84" y1="46" x2="95" y2="46" stroke="#FF1493" stroke-width="1"/>
+    </g>
+    <!-- Animated Legs -->
+    <rect class="back-leg-1" x="12" y="55" width="6" height="20" rx="3" fill="#FF69B4"/>
+    <rect class="back-leg-2" x="22" y="55" width="6" height="20" rx="3" fill="#FF69B4"/>
+    <rect class="front-leg-1" x="52" y="55" width="6" height="20" rx="3" fill="#FF69B4"/>
+    <rect class="front-leg-2" x="62" y="55" width="6" height="20" rx="3" fill="#FF69B4"/>
+    <!-- Tail - harsh S-shape with pronounced curves -->
+    <path class="tail" d="M 12 50 Q 5 45 5 38 Q 5 31 10 30 Q 13 29 13 33" stroke="#FF69B4" stroke-width="8" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- Cat 2 - Light Pink (smaller, faster) -->
+  <g class="cat2" transform="translate(75,0) scale(-1,1)">
+    <g class="cat-body" fill="#FFB6C1">
+      <ellipse cx="35" cy="55" rx="22" ry="11"/>
+      <!-- Head - front facing -->
+      <circle cx="60" cy="46" r="12"/>
+      <!-- Ears - forward facing -->
+      <polygon points="48,44 52,26 56,44"/>
+      <polygon points="49,42 52,28 55,42" fill="#FF69B4"/>
+      <polygon points="64,44 68,26 72,44"/>
+      <polygon points="65,42 68,28 71,42" fill="#FF69B4"/>
+      <!-- Big cute eyes -->
+      <circle cx="54" cy="44" r="4" fill="#fff"/>
+      <circle cx="66" cy="44" r="4" fill="#fff"/>
+      <circle cx="55" cy="45" r="2.5" fill="#333"/>
+      <circle cx="67" cy="45" r="2.5" fill="#333"/>
+      <circle cx="56" cy="43" r="0.8" fill="#fff"/>
+      <circle cx="68" cy="43" r="0.8" fill="#fff"/>
+      <!-- Cute nose -->
+      <ellipse cx="60" cy="49" rx="1.5" ry="1" fill="#FF69B4"/>
+      <!-- Cute mouth -->
+      <path d="M 57 51 Q 60 54 63 51" stroke="#FF69B4" stroke-width="0.8" fill="none"/>
+      <!-- Whiskers -->
+      <line x1="50" y1="49" x2="42" y2="47" stroke="#FF69B4" stroke-width="0.8"/>
+      <line x1="50" y1="51" x2="41" y2="51" stroke="#FF69B4" stroke-width="0.8"/>
+      <line x1="70" y1="49" x2="78" y2="47" stroke="#FF69B4" stroke-width="0.8"/>
+      <line x1="70" y1="51" x2="79" y2="51" stroke="#FF69B4" stroke-width="0.8"/>
+    </g>
+    <rect class="back-leg-1" x="14" y="58" width="5" height="16" rx="2.5" fill="#FFB6C1"/>
+    <rect class="back-leg-2" x="22" y="58" width="5" height="16" rx="2.5" fill="#FFB6C1"/>
+    <rect class="front-leg-1" x="46" y="58" width="5" height="16" rx="2.5" fill="#FFB6C1"/>
+    <rect class="front-leg-2" x="54" y="58" width="5" height="16" rx="2.5" fill="#FFB6C1"/>
+    <!-- Tail curved toward body -->
+    <path class="tail" d="M 13 55 Q 7 50 7 43 Q 7 37 11 36 Q 14 35 14 39" stroke="#FFB6C1" stroke-width="6" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- Cat 3 - Deep Pink (larger, slower) -->
+  <g class="cat3" transform="translate(110,0) scale(-1,1)">
+    <g class="cat-body" fill="#FF1493">
+      <ellipse cx="45" cy="48" rx="32" ry="16"/>
+      <!-- Head - front facing -->
+      <circle cx="82" cy="36" r="16"/>
+      <!-- Ears - forward facing -->
+      <polygon points="66,34 71,12 76,34"/>
+      <polygon points="68,32 71,14 74,32" fill="#C71585"/>
+      <polygon points="88,34 93,12 98,34"/>
+      <polygon points="90,32 93,14 96,32" fill="#C71585"/>
+      <!-- Big cute eyes -->
+      <circle cx="75" cy="34" r="6" fill="#fff"/>
+      <circle cx="89" cy="34" r="6" fill="#fff"/>
+      <circle cx="76" cy="35" r="3.5" fill="#333"/>
+      <circle cx="90" cy="35" r="3.5" fill="#333"/>
+      <circle cx="77" cy="33" r="1.2" fill="#fff"/>
+      <circle cx="91" cy="33" r="1.2" fill="#fff"/>
+      <!-- Cute nose -->
+      <ellipse cx="82" cy="41" rx="2.5" ry="2" fill="#C71585"/>
+      <!-- Cute mouth -->
+      <path d="M 78 44 Q 82 48 86 44" stroke="#C71585" stroke-width="1.2" fill="none"/>
+      <!-- Whiskers -->
+      <line x1="68" y1="41" x2="58" y2="38" stroke="#C71585" stroke-width="1.2"/>
+      <line x1="68" y1="44" x2="56" y2="44" stroke="#C71585" stroke-width="1.2"/>
+      <line x1="96" y1="41" x2="106" y2="38" stroke="#C71585" stroke-width="1.2"/>
+      <line x1="96" y1="44" x2="108" y2="44" stroke="#C71585" stroke-width="1.2"/>
+    </g>
+    <rect class="back-leg-1" x="14" y="54" width="7" height="24" rx="3.5" fill="#FF1493"/>
+    <rect class="back-leg-2" x="26" y="54" width="7" height="24" rx="3.5" fill="#FF1493"/>
+    <rect class="front-leg-1" x="58" y="54" width="7" height="24" rx="3.5" fill="#FF1493"/>
+    <rect class="front-leg-2" x="70" y="54" width="7" height="24" rx="3.5" fill="#FF1493"/>
+    <!-- Curled tail (question mark style) -->
+    <path class="tail" d="M 13 48 Q 5 42 5 34 Q 5 27 10 26 Q 13 25 13 29" stroke="#FF1493" stroke-width="9" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- Cat 4 - Pale Violet Red -->
+  <g class="cat4" transform="translate(85,0) scale(-1,1)">
+    <g class="cat-body" fill="#DB7093">
+      <ellipse cx="38" cy="52" rx="25" ry="13"/>
+      <!-- Head - front facing -->
+      <circle cx="66" cy="42" r="13"/>
+      <!-- Ears - forward facing -->
+      <polygon points="53,40 57,20 61,40"/>
+      <polygon points="54,38 57,22 60,38" fill="#C71585"/>
+      <polygon points="71,40 75,20 79,40"/>
+      <polygon points="72,38 75,22 78,38" fill="#C71585"/>
+      <!-- Big cute eyes -->
+      <circle cx="60" cy="40" r="4.5" fill="#fff"/>
+      <circle cx="72" cy="40" r="4.5" fill="#fff"/>
+      <circle cx="61" cy="41" r="2.8" fill="#333"/>
+      <circle cx="73" cy="41" r="2.8" fill="#333"/>
+      <circle cx="62" cy="39" r="1" fill="#fff"/>
+      <circle cx="74" cy="39" r="1" fill="#fff"/>
+      <!-- Cute nose -->
+      <ellipse cx="66" cy="46" rx="2" ry="1.5" fill="#C71585"/>
+      <!-- Cute mouth -->
+      <path d="M 63 49 Q 66 52 69 49" stroke="#C71585" stroke-width="1" fill="none"/>
+      <!-- Whiskers -->
+      <line x1="55" y1="46" x2="46" y2="44" stroke="#C71585" stroke-width="0.9"/>
+      <line x1="55" y1="48" x2="45" y2="48" stroke="#C71585" stroke-width="0.9"/>
+      <line x1="77" y1="46" x2="86" y2="44" stroke="#C71585" stroke-width="0.9"/>
+      <line x1="77" y1="48" x2="87" y2="48" stroke="#C71585" stroke-width="0.9"/>
+    </g>
+    <rect class="back-leg-1" x="14" y="56" width="6" height="18" rx="3" fill="#DB7093"/>
+    <rect class="back-leg-2" x="24" y="56" width="6" height="18" rx="3" fill="#DB7093"/>
+    <rect class="front-leg-1" x="50" y="56" width="6" height="18" rx="3" fill="#DB7093"/>
+    <rect class="front-leg-2" x="60" y="56" width="6" height="18" rx="3" fill="#DB7093"/>
+    <!-- Gentle flowing S-shape tail -->
+    <path class="tail" d="M 13 52 Q 6 45 8 38 Q 10 31 5 25" stroke="#DB7093" stroke-width="7" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>
+
