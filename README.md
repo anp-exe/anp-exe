@@ -36,12 +36,12 @@ Text   9 mins          ███████████████████
 
 ## DataCamp Portfolio 📊
 
-<p align="center">
-  <a href=["https://www.datacamp.com/portfolio/xannxbelle05"](https://www.datacamp.com/portfolio/xannxbelle05"]>
+  <p align="center">
+<a href="https://www.datacamp.com/portfolio/xannxbelle05">
     <img src="https://img.shields.io/badge/DataCamp-Profile-FFC0CB?style=for-the-badge&logo=datacamp&logoColor=white" alt="DataCamp Profile">
-  </a>
-</p>
-
+</a>
+  </p>
+  
 ---
 
 ## Currently Reading📚
