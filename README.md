@@ -27,11 +27,7 @@
 <!--START_SECTION:waka-->
 
 ```txt
-Jupyter            1 hr 17 mins    ██████████▒░░░░░░░░░░░░░░   41.50 %
-Markdown           58 mins         ████████░░░░░░░░░░░░░░░░░   31.73 %
-Image (svg)        32 mins         ████▒░░░░░░░░░░░░░░░░░░░░   17.56 %
-GitIgnore file     7 mins          █░░░░░░░░░░░░░░░░░░░░░░░░   04.01 %
-YAML               5 mins          ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.93 %
+No activity tracked
 ```
 
 <!--END_SECTION:waka-->
