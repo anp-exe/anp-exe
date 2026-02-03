@@ -56,22 +56,10 @@ GitIgnore file     0 secs          ░░░░░░░░░░░░░░░
       <b> No BS guide to linear algebra</b><br>
       <i>by Ivan Savov</i>
     </td>
-     <!--  <td align="center" width="200">
-      <img src="https://via.placeholder.com/150x200/FFC0CB/FFFFFF?text=Book+2" width="120" alt="Book 2"><br>
-      <b>Deep Learning</b><br>
-      <i>by Ian Goodfellow</i>
+     <td align="center" width="200">
+      <b>Think Stats, 3rd edition</b><br>
+      <i>by Allen B Downey</i>
     </td>
-    <td align="center" width="200">
-      <img src="https://via.placeholder.com/150x200/FFB6C1/FFFFFF?text=Book+3" width="120" alt="Book 3"><br>
-      <b>Linear Algebra</b><br>
-      <i>by Gilbert Strang</i>
-    </td>
-    <td align="center" width="200">
-      <img src="https://via.placeholder.com/150x200/FFC0CB/FFFFFF?text=Book+4" width="120" alt="Book 4"><br>
-      <b>Statistical Learning</b><br>
-      <i>by Hastie & Tibshirani</i>
-    </td> 
- </tr>  -->
 </table>
 
 ---
