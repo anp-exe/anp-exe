@@ -20,6 +20,7 @@
   <img src="https://img.shields.io/badge/PyCharm-FFB6C1?style=for-the-badge&logo=pycharm&logoColor=white" alt="PyCharm">
   <img src="https://img.shields.io/badge/Linux-FFB6C1?style=for-the-badge&logo=linux&logoColor=white" alt="Linux">
   <img src="https://img.shields.io/badge/WSL-FFB6C1?style=for-the-badge&logo=windows&logoColor=white" alt="WSL">
+  <img src="https://img.shields.io/badge/Autodesk_Inventor-FFB6C1?style=for-the-badge&logo=autodesk&logoColor=white" alt="Autodesk Inventor">
 </p>
 
 ---
