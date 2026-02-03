@@ -45,6 +45,10 @@ GitIgnore file     0 secs          ░░░░░░░░░░░░░░░
     <img src="https://img.shields.io/badge/DataCamp-Profile-FFC0CB?style=for-the-badge&logo=datacamp&logoColor=white" alt="DataCamp Profile">
 </a>
   </p>
+
+### Certificates 📜
+- [Data Analyst Certificate](./assets/data_analyst_cert.pdf)
+- [Python Fundamentals Certificate](./assets/python_fun_cert.pdf)
   
 ---
 
