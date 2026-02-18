@@ -74,8 +74,8 @@ Text               1 min                 ░░░░░░░░░░░░░
 
 ### 🎓 Education
 - **BEng Robotics Engineering** - University of Bath 
-- **[Access to HE Certificate](https://www.accesstohe.ac.uk/docs/access/regulating-access-documents/access-to-he-key-statistics-2022-34.pdf?sfvrsn=3bb8b881_3)** - 45/45 Distinctions 🏆
-  - *According to Access to HE statistics, less than 16% of students who completed the course achieved a full distinction profile* 
+- **[Access to HE Certificate](./assets/AccessHEResults.jpeg)** - 45/45 Distinctions 🏆
+  - *According to [Access to HE statistics](https://www.accesstohe.ac.uk/docs/access/regulating-access-documents/access-to-he-key-statistics-2022-34.pdf?sfvrsn=3bb8b881_3), less than 16% of students who completed the course achieved a full distinction profile* 
 
 ### 💻 Past Experience
 - **Junior Engineer** @ Team Bath Racing Electric (2025)
