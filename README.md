@@ -83,7 +83,7 @@ Text               1 min                 ░░░░░░░░░░░░░
 - **Volunteer** @ Code Club (2024-2025)
 
 ### Interests 🌟
--  Chess (at my peak I was 1500 ECF standard.)
+-  Chess (at my peak I was [1500 ECF standard](https://rating.englishchess.org.uk/players?ECF_code=365251J).)
 
 ### Languages 🌐
 
