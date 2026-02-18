@@ -60,11 +60,11 @@ Text               1 min                 ░░░░░░░░░░░░░
 <table align="center">
   <tr>
     <td align="center" width="200">
-      <b> No BS guide to linear algebra</b><br>
+      <a href="https://github.com/anp-exe/Maths"><b>No BS guide to linear algebra</b></a><br>
       <i>by Ivan Savov</i>
     </td>
      <td align="center" width="200">
-      <b>Think Stats, 3rd edition</b><br>
+      <a href="https://github.com/anp-exe/ThinkStats"><b>Think Stats, 3rd edition</b></a><br>
       <i>by Allen B Downey</i>
     </td>
   </tr>
