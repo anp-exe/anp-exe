@@ -3,7 +3,6 @@
 </p>
 
 ## Hello, I'm Anna! ✨
-<!-- Running Cat Silhouettes Animation -->
 <p align="center">
   <img src="./assets/running-cats.svg" width="100%" alt="Running cats animation">
 </p>
