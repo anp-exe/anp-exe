@@ -50,6 +50,8 @@ GitIgnore file     0 secs          ░░░░░░░░░░░░░░░
 ### Certificates 📜
 - [Data Analyst Certificate](./assets/data_analyst_cert.pdf)
 - [Python Fundamentals Certificate](./assets/python_fun_cert.pdf)
+- [MATLAB Certificate](./assets/matlab%202.pdf)
+- [GitHub Foundations Certificate](./assets/Github_Foundations.pdf)
   
 ---
 
@@ -65,12 +67,15 @@ GitIgnore file     0 secs          ░░░░░░░░░░░░░░░
       <b>Think Stats, 3rd edition</b><br>
       <i>by Allen B Downey</i>
     </td>
+  </tr>
 </table>
 
 ---
 
 ### 🎓 Education
 - **BEng Robotics Engineering** - University of Bath 
+- **[Access to HE Certificate](https://www.accesstohe.ac.uk/docs/access/regulating-access-documents/access-to-he-key-statistics-2022-34.pdf?sfvrsn=3bb8b881_3)** - 45/45 Distinctions 🏆
+  - *According to Access to HE statistics, less than 16% of students who completed the course achieved a full distinction profile* 
 
 ### 💻 Past Experience
 - **Junior Engineer** @ Team Bath Racing Electric (2025)
@@ -88,7 +93,6 @@ GitIgnore file     0 secs          ░░░░░░░░░░░░░░░
 | Russian       |  Native                                                                   |
 ---
 
-</div>
 
 <div style="display: flex; justify-content: center; gap: 20px; margin: 20px 0;">
   <img src="https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif" width="100" alt="Running Cat">
