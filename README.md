@@ -89,7 +89,3 @@ Markdown   15 mins               █▓░░░░░░░░░░░░░�
 | Russian       |  Native                                                                   |
 ---
 
-
-<div style="display: flex; justify-content: center; gap: 20px; margin: 20px 0;">
-  <img src="https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif" width="100" alt="Running Cat">
-</div>
