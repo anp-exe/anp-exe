@@ -27,8 +27,7 @@
 <!--START_SECTION:waka-->
 
 ```txt
-Jupyter    3 hrs 37 mins         ███████████████████████▒░   93.44 %
-Markdown   15 mins               █▓░░░░░░░░░░░░░░░░░░░░░░░   06.56 %
+Jupyter   3 hrs 30 mins         █████████████████████████   100.00 %
 ```
 
 <!--END_SECTION:waka-->
