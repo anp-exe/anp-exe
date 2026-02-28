@@ -27,7 +27,11 @@
 <!--START_SECTION:waka-->
 
 ```txt
-Jupyter   3 hrs 30 mins         █████████████████████████   100.00 %
+Jupyter            2 hrs 38 mins         ███████████████████████▒░   93.40 %
+Markdown           8 mins                █▒░░░░░░░░░░░░░░░░░░░░░░░   04.77 %
+Python             1 min                 ▒░░░░░░░░░░░░░░░░░░░░░░░░   00.88 %
+Requirements.txt   1 min                 ▒░░░░░░░░░░░░░░░░░░░░░░░░   00.87 %
+Text               0 secs                ░░░░░░░░░░░░░░░░░░░░░░░░░   00.08 %
 ```
 
 <!--END_SECTION:waka-->
