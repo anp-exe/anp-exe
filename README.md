@@ -72,6 +72,7 @@ Text               0 secs                ░░░░░░░░░░░░░
 ---
 
 ### 🎓 Education
+- **Bsc Artificial Intelligence and Philosophy - King's College London**
 - **BEng Robotics Engineering** - University of Bath 
 - **[Access to HE Certificate](./assets/AccessHEResults.jpeg)** - 45/45 Distinctions 🏆
   - *According to [Access to HE statistics](https://www.accesstohe.ac.uk/docs/access/regulating-access-documents/access-to-he-key-statistics-2022-34.pdf?sfvrsn=3bb8b881_3), less than 16% of students who completed the course achieved a full distinction profile* 
