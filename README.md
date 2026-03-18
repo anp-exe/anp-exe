@@ -47,6 +47,7 @@ Text               1 min                 ░░░░░░░░░░░░░
   </p>
 
 ### Certificates 📜
+- [Data Scientist Certificate](./assets/Datascientist.pdf)
 - [Data Analyst Certificate](./assets/data_analyst_cert.pdf)
 - [Python Fundamentals Certificate](./assets/python_fun_cert.pdf)
 - [MATLAB Certificate](./assets/matlab%202.pdf)
