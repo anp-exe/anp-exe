@@ -27,11 +27,7 @@
 <!--START_SECTION:waka-->
 
 ```txt
-Jupyter            7 hrs 47 mins         ████████████████████████░   95.76 %
-Python             7 mins                ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.55 %
-Markdown           6 mins                ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.38 %
-GitIgnore file     4 mins                ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.02 %
-Text               1 min                 ░░░░░░░░░░░░░░░░░░░░░░░░░   00.23 %
+No activity tracked
 ```
 
 <!--END_SECTION:waka-->
@@ -73,6 +69,7 @@ Text               1 min                 ░░░░░░░░░░░░░
 ---
 
 ### 🎓 Education
+- **BSc Artificial Intelligence and Philosophy - King's College London**
 - **BEng Robotics Engineering** - University of Bath 
 - **[Access to HE Certificate](./assets/AccessHEResults.jpeg)** - 45/45 Distinctions 🏆
   - *According to [Access to HE statistics](https://www.accesstohe.ac.uk/docs/access/regulating-access-documents/access-to-he-key-statistics-2022-34.pdf?sfvrsn=3bb8b881_3), less than 16% of students who completed the course achieved a full distinction profile* 
@@ -93,7 +90,3 @@ Text               1 min                 ░░░░░░░░░░░░░
 | Russian       |  Native                                                                   |
 ---
 
-
-<div style="display: flex; justify-content: center; gap: 20px; margin: 20px 0;">
-  <img src="https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif" width="100" alt="Running Cat">
-</div>
