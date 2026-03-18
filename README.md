@@ -43,11 +43,11 @@ No activity tracked
   </p>
 
 ### Certificates 📜
-- [Data Scientist Certificate](./assets/Datascientist.pdf)
-- [Data Analyst Certificate](./assets/data_analyst_cert.pdf)
-- [Python Fundamentals Certificate](./assets/python_fun_cert.pdf)
-- [MATLAB Certificate](./assets/matlab%202.pdf)
-- [GitHub Foundations Certificate](./assets/Github_Foundations.pdf)
+- [Data Scientist](./assets/Datascientist.pdf)
+- [Data Analyst](./assets/data_analyst_cert.pdf)
+- [Python Fundamentals](./assets/python_fun_cert.pdf)
+- [MATLAB](./assets/matlab%202.pdf)
+- [GitHub Foundations](./assets/Github_Foundations.pdf)
   
 ---
 
