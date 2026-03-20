@@ -27,7 +27,10 @@
 <!--START_SECTION:waka-->
 
 ```txt
-No activity tracked
+Markdown           4 mins                ████████████████████████▒   97.56 %
+Jupyter            0 secs                ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.41 %
+Requirements.txt   0 secs                ░░░░░░░░░░░░░░░░░░░░░░░░░   00.02 %
+Makefile           0 secs                ░░░░░░░░░░░░░░░░░░░░░░░░░   00.01 %
 ```
 
 <!--END_SECTION:waka-->
