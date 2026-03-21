@@ -27,10 +27,10 @@
 <!--START_SECTION:waka-->
 
 ```txt
-Markdown           4 mins                ████████████████████████▒   97.56 %
-Jupyter            0 secs                ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.41 %
-Requirements.txt   0 secs                ░░░░░░░░░░░░░░░░░░░░░░░░░   00.02 %
-Makefile           0 secs                ░░░░░░░░░░░░░░░░░░░░░░░░░   00.01 %
+Markdown           5 mins                ████████████████▒░░░░░░░░   64.83 %
+Jupyter            2 mins                ████████▓░░░░░░░░░░░░░░░░   35.15 %
+Requirements.txt   0 secs                ░░░░░░░░░░░░░░░░░░░░░░░░░   00.01 %
+Makefile           0 secs                ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 %
 ```
 
 <!--END_SECTION:waka-->
