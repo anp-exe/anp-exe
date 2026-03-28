@@ -1,4 +1,3 @@
-
 <p style="background-color:#FFE4E8; padding:20px; border-radius:10px;">
 </p>
 
@@ -42,8 +41,12 @@ No activity tracked
 </a>
   </p>
 
+### Industry Qualifications
+- [Associate Data Scientist](./assets/Associate_DS.pdf)
+
 ### Certificates 📜
 - [Data Scientist](./assets/Datascientist.pdf)
+- [Associate Data Scientist](./assets/Associate_DS.pdf)
 - [Data Analyst](./assets/data_analyst_cert.pdf)
 - [Python Fundamentals](./assets/python_fun_cert.pdf)
 - [MATLAB](./assets/matlab%202.pdf)
@@ -89,4 +92,3 @@ No activity tracked
 | English       |  Native                                                                   |
 | Russian       |  Native                                                                   |
 ---
-
