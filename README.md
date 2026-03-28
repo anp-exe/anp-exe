@@ -26,7 +26,11 @@
 <!--START_SECTION:waka-->
 
 ```txt
-No activity tracked
+Jupyter          4 hrs 37 mins         ████████████████████████▒   97.29 %
+Markdown         3 mins                ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.24 %
+Text             2 mins                ▒░░░░░░░░░░░░░░░░░░░░░░░░   00.95 %
+GitIgnore file   0 secs                ░░░░░░░░░░░░░░░░░░░░░░░░░   00.29 %
+CSV              0 secs                ░░░░░░░░░░░░░░░░░░░░░░░░░   00.24 %
 ```
 
 <!--END_SECTION:waka-->
