@@ -26,11 +26,7 @@
 <!--START_SECTION:waka-->
 
 ```txt
-Markdown         10 mins               █████████████████████▓░░░   86.08 %
-Jupyter          0 secs                ██░░░░░░░░░░░░░░░░░░░░░░░   07.89 %
-YAML             0 secs                █▒░░░░░░░░░░░░░░░░░░░░░░░   05.76 %
-GitIgnore file   0 secs                ░░░░░░░░░░░░░░░░░░░░░░░░░   00.27 %
-Text             0 secs                ░░░░░░░░░░░░░░░░░░░░░░░░░   00.01 %
+No activity tracked
 ```
 
 <!--END_SECTION:waka-->
