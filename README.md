@@ -86,10 +86,8 @@ Chess — at my peak I was [1500 ECF standard](https://rating.englishchess.org.u
   </tr>
 </table>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/anp-exe/anp-exe/output/github-contribution-grid-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/anp-exe/anp-exe/output/github-contribution-grid-snake.svg" />
-  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/anp-exe/anp-exe/output/github-contribution-grid-snake.svg" />
-</picture>
+<p align="center">
+  <sub>&#x2661; &nbsp; &#x2661; &nbsp; &#x2661;</sub>
+</p>
 
 </div>
