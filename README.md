@@ -8,7 +8,6 @@
 
 <img src="https://raw.githubusercontent.com/anp-exe/anp-exe/output/github-metrics.svg" alt="GitHub Metrics" />
 
----
 
 <!--START_SECTION:waka-->
 
