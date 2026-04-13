@@ -3,7 +3,7 @@
 
 <div align="center">
 
-<img src="./assets/kuromi-gif.gif" alt="Kuromi" width="200"/>
+<img src="./assets/Lo_fi_Keyboard_Animation_Loop.gif" alt="Lo-fi Keyboard Animation" width="800"/>
 
 ## Hello, I'm Anna!👩🏼‍💻
 
