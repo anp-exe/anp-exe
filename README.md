@@ -6,19 +6,8 @@
 ## Hello, I'm Anna!👩🏼‍💻
 
 ---
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-FFB6C1?style=for-the-badge&logo=python&logoColor=white" alt="Python">
-  <img src="https://img.shields.io/badge/Jupyter-FFB6C1?style=for-the-badge&logo=jupyter&logoColor=white" alt="Jupyter">
-  <img src="https://img.shields.io/badge/HTML5-FFB6C1?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
-  <img src="https://img.shields.io/badge/CSS3-FFB6C1?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
-  <img src="https://img.shields.io/badge/Data_Science-FFB6C1?style=for-the-badge&logo=databricks&logoColor=white" alt="Data Science">
-  <img src="https://img.shields.io/badge/AI-FFB6C1?style=for-the-badge&logo=tensorflow&logoColor=white" alt="AI">
-  <img src="https://img.shields.io/badge/MATLAB-FFB6C1?style=for-the-badge&logo=mathworks&logoColor=white" alt="MATLAB">
-  <img src="https://img.shields.io/badge/PyCharm-FFB6C1?style=for-the-badge&logo=pycharm&logoColor=white" alt="PyCharm">
-  <img src="https://img.shields.io/badge/Linux-FFB6C1?style=for-the-badge&logo=linux&logoColor=white" alt="Linux">
-  <img src="https://img.shields.io/badge/WSL-FFB6C1?style=for-the-badge&logo=windows&logoColor=white" alt="WSL">
-  <img src="https://img.shields.io/badge/Autodesk_Inventor-FFB6C1?style=for-the-badge&logo=autodesk&logoColor=white" alt="Autodesk Inventor">
-</p>
+
+<img src="https://raw.githubusercontent.com/anp-exe/anp-exe/output/github-metrics.svg" alt="GitHub Metrics" />
 
 ---
 
@@ -55,6 +44,20 @@ No activity tracked
 [Data Scientist](./assets/Datascientist.pdf) · [Associate Data Scientist](./assets/Associate_DS.pdf) · [Data Analyst](./assets/data_analyst_cert.pdf) · [Python Fundamentals](./assets/python_fun_cert.pdf) · [MATLAB](./assets/matlab%202.pdf) · [GitHub Foundations](./assets/Github_Foundations.pdf)
 
 ---
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-FFB6C1?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/Jupyter-FFB6C1?style=for-the-badge&logo=jupyter&logoColor=white" alt="Jupyter">
+  <img src="https://img.shields.io/badge/HTML5-FFB6C1?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
+  <img src="https://img.shields.io/badge/CSS3-FFB6C1?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
+  <img src="https://img.shields.io/badge/Data_Science-FFB6C1?style=for-the-badge&logo=databricks&logoColor=white" alt="Data Science">
+  <img src="https://img.shields.io/badge/AI-FFB6C1?style=for-the-badge&logo=tensorflow&logoColor=white" alt="AI">
+  <img src="https://img.shields.io/badge/MATLAB-FFB6C1?style=for-the-badge&logo=mathworks&logoColor=white" alt="MATLAB">
+  <img src="https://img.shields.io/badge/PyCharm-FFB6C1?style=for-the-badge&logo=pycharm&logoColor=white" alt="PyCharm">
+  <img src="https://img.shields.io/badge/Linux-FFB6C1?style=for-the-badge&logo=linux&logoColor=white" alt="Linux">
+  <img src="https://img.shields.io/badge/WSL-FFB6C1?style=for-the-badge&logo=windows&logoColor=white" alt="WSL">
+  <img src="https://img.shields.io/badge/Autodesk_Inventor-FFB6C1?style=for-the-badge&logo=autodesk&logoColor=white" alt="Autodesk Inventor">
+</p>
 
 ### 🎓 Education
 **BSc Artificial Intelligence and Philosophy** — King's College London<br>
@@ -93,9 +96,5 @@ Chess — at my peak I was [1500 ECF standard](https://rating.englishchess.org.u
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/anp-exe/anp-exe/output/github-contribution-grid-snake.svg" />
   <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/anp-exe/anp-exe/output/github-contribution-grid-snake.svg" />
 </picture>
-
----
-
-<img src="https://raw.githubusercontent.com/anp-exe/anp-exe/output/github-metrics.svg" alt="GitHub Metrics" />
 
 </div>
