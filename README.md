@@ -2,9 +2,6 @@
 </p>
 
 ## Hello, I'm Anna! ✨
-<p align="center">
-  <img src="./assets/running-cats.svg" width="100%" alt="Running cats animation">
-</p>
 
 ---
 <p align="center">
@@ -108,5 +105,6 @@ No activity tracked
   </a>
 </p>
 
----
-
+<p align="center">
+  <img src="./assets/running-cats.svg" width="100%" alt="Running cats animation">
+</p>
