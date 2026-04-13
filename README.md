@@ -96,6 +96,6 @@ Chess — at my peak I was [1500 ECF standard](https://rating.englishchess.org.u
 
 ---
 
-<img src="https://github-readme-stats.vercel.app/api?username=anp-exe&show_icons=true&bg_color=FFF0F3&title_color=FF8FA3&text_color=555555&icon_color=FFB6C1&border_color=FFB6C1&border_radius=10" alt="Anna's GitHub Stats" />
+<img src="https://raw.githubusercontent.com/anp-exe/anp-exe/output/github-metrics.svg" alt="GitHub Metrics" />
 
 </div>
