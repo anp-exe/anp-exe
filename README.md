@@ -86,24 +86,9 @@ Chess — at my peak I was [1500 ECF standard](https://rating.englishchess.org.u
 
 ### Languages 🌐
 
-<table align="center">
-  <tr>
-    <th>Language</th>
-    <th>Proficiency</th>
-  </tr>
-  <tr>
-    <td align="center">English</td>
-    <td align="center">Native</td>
-  </tr>
-  <tr>
-    <td align="center">Russian</td>
-    <td align="center">Native</td>
-  </tr>
-</table>
+**English** — Native &nbsp;|&nbsp; **Russian** — Native
 
 ---
-
-## Coding Challenges 🎮
 
 <p align="center">
   <a href="https://www.codingame.com/profile/e812ad2ad96f148f77e20abf6e36e9db1647607">
