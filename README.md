@@ -5,7 +5,6 @@
 
 ## Hello, I'm Anna!👩🏼‍💻
 
----
 
 <img src="https://raw.githubusercontent.com/anp-exe/anp-exe/output/github-metrics.svg" alt="GitHub Metrics" />
 
