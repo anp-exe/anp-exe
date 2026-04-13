@@ -3,7 +3,7 @@
 
 <div align="center">
 
-## Hello, I'm Anna! ✨
+## Hello, I'm Anna!👩🏼‍💻
 
 ---
 <p align="center">
