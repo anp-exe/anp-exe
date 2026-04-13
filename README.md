@@ -32,12 +32,20 @@ No activity tracked
 
 ---
 
-## DataCamp Portfolio 📊
+## Portfolio & Profiles 🌐
 
 <p align="center">
-<a href="https://www.datacamp.com/portfolio/xannxbelle05">
-    <img src="https://img.shields.io/badge/DataCamp-Profile-FFC0CB?style=for-the-badge&logo=datacamp&logoColor=white" alt="DataCamp Profile">
-</a>
+  <a href="https://www.datacamp.com/portfolio/xannxbelle05">
+    <img src="https://img.shields.io/badge/DataCamp-Profile-FFB6C1?style=for-the-badge&logo=datacamp&logoColor=white" alt="DataCamp Profile">
+  </a>
+  &nbsp;
+  <a href="https://www.codingame.com/profile/e812ad2ad96f148f77e20abf6e36e9db1647607">
+    <img src="https://img.shields.io/badge/CodinGame-Clash_of_Code-FFB6C1?style=for-the-badge&logo=codeforces&logoColor=white" alt="CodinGame Clash of Code">
+  </a>
+  &nbsp;
+  <a href="https://www.codedex.io/@anp-exe">
+    <img src="https://img.shields.io/badge/Codedex-%40anp--exe-FFB6C1?style=for-the-badge&logo=codementor&logoColor=white" alt="Codedex Profile">
+  </a>
 </p>
 
 ### Industry Qualifications
@@ -87,18 +95,6 @@ Chess — at my peak I was [1500 ECF standard](https://rating.englishchess.org.u
 ### Languages 🌐
 
 **English** — Native &nbsp;|&nbsp; **Russian** — Native
-
----
-
-<p align="center">
-  <a href="https://www.codingame.com/profile/e812ad2ad96f148f77e20abf6e36e9db1647607">
-    <img src="https://img.shields.io/badge/CodinGame-Clash_of_Code-FFB6C1?style=for-the-badge&logo=codingame&logoColor=white" alt="CodinGame Clash of Code">
-  </a>
-  &nbsp;&nbsp;
-  <a href="https://www.codedex.io/@anp-exe">
-    <img src="https://img.shields.io/badge/Codedex-%40anp--exe-FFB6C1?style=for-the-badge&logoColor=white" alt="Codedex Profile">
-  </a>
-</p>
 
 <p align="center">
   <img src="./assets/running-cats.svg" width="100%" alt="Running cats animation">
