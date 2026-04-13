@@ -97,4 +97,16 @@ No activity tracked
 | ------------- | ------------------------------------------------------------------------- |
 | English       |  Native                                                                   |
 | Russian       |  Native                                                                   |
+
+<p align="center">
+  <a href="https://www.codingame.com/profile/e812ad2ad96f148f77e20abf6e36e9db1647607">
+    <img src="https://img.shields.io/badge/CodinGame-Clash_of_Code-FFB6C1?style=for-the-badge&logo=codingame&logoColor=white" alt="CodinGame Clash of Code">
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://www.codedex.io/@anp-exe">
+    <img src="https://img.shields.io/badge/Codedex-%40anp--exe-FFB6C1?style=for-the-badge&logoColor=white" alt="Codedex Profile">
+  </a>
+</p>
+
 ---
+
