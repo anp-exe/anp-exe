@@ -3,6 +3,8 @@
 
 <div align="center">
 
+<img src="./assets/kuromi-banner.svg" alt="Kuromi Banner" width="800"/>
+
 ## Hello, I'm Anna!👩🏼‍💻
 
 <p align="center">
