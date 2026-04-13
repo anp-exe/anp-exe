@@ -1,0 +1,184 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="800" height="200">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFE4E8"/>
+      <stop offset="50%" stop-color="#FFF0F3"/>
+      <stop offset="100%" stop-color="#FFE4E8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="200" rx="15" fill="url(#bg)"/>
+
+  <!-- Pixel grid helper: each "pixel" is 4x4 -->
+
+  <!-- === LEFT KUROMI (sitting, waving) === -->
+  <g transform="translate(80, 20) scale(4)">
+    <!-- Hood/hat - black with pink skull -->
+    <!-- Top of hood pointy ears -->
+    <rect x="4" y="0" width="1" height="1" fill="#2D2D2D"/>
+    <rect x="12" y="0" width="1" height="1" fill="#2D2D2D"/>
+    <rect x="3" y="1" width="2" height="1" fill="#2D2D2D"/>
+    <rect x="12" y="1" width="2" height="1" fill="#2D2D2D"/>
+    <rect x="3" y="2" width="3" height="1" fill="#2D2D2D"/>
+    <rect x="11" y="2" width="3" height="1" fill="#2D2D2D"/>
+    <!-- Hood main -->
+    <rect x="3" y="3" width="11" height="1" fill="#2D2D2D"/>
+    <rect x="2" y="4" width="13" height="1" fill="#2D2D2D"/>
+    <rect x="2" y="5" width="13" height="1" fill="#2D2D2D"/>
+    <!-- Pink skull on hood -->
+    <rect x="7" y="4" width="3" height="1" fill="#FF69B4"/>
+    <rect x="7" y="5" width="1" height="1" fill="#FF69B4"/>
+    <rect x="9" y="5" width="1" height="1" fill="#FF69B4"/>
+
+    <!-- Face - white -->
+    <rect x="3" y="6" width="11" height="1" fill="white"/>
+    <rect x="2" y="7" width="13" height="1" fill="white"/>
+    <rect x="2" y="8" width="13" height="1" fill="white"/>
+    <rect x="3" y="9" width="11" height="1" fill="white"/>
+    <rect x="3" y="10" width="11" height="1" fill="white"/>
+    <rect x="4" y="11" width="9" height="1" fill="white"/>
+
+    <!-- Eyes - dark purple -->
+    <rect x="5" y="7" width="2" height="2" fill="#4B0082"/>
+    <rect x="10" y="7" width="2" height="2" fill="#4B0082"/>
+    <!-- Eye shine -->
+    <rect x="5" y="7" width="1" height="1" fill="white"/>
+    <rect x="10" y="7" width="1" height="1" fill="white"/>
+
+    <!-- Mouth -->
+    <rect x="7" y="9" width="3" height="1" fill="#FF69B4"/>
+    <rect x="8" y="10" width="1" height="1" fill="#FF69B4"/>
+
+    <!-- Body - black dress -->
+    <rect x="4" y="12" width="9" height="1" fill="#2D2D2D"/>
+    <rect x="3" y="13" width="11" height="1" fill="#2D2D2D"/>
+    <rect x="3" y="14" width="11" height="1" fill="#2D2D2D"/>
+    <rect x="3" y="15" width="11" height="1" fill="#2D2D2D"/>
+    <!-- Pink bow on dress -->
+    <rect x="7" y="12" width="3" height="1" fill="#FF69B4"/>
+
+    <!-- Arms -->
+    <!-- Left arm waving -->
+    <rect x="1" y="11" width="2" height="1" fill="white"/>
+    <rect x="0" y="10" width="2" height="1" fill="white"/>
+    <!-- Right arm down -->
+    <rect x="14" y="13" width="2" height="1" fill="white"/>
+    <rect x="15" y="14" width="1" height="1" fill="white"/>
+
+    <!-- Feet -->
+    <rect x="4" y="16" width="3" height="1" fill="#2D2D2D"/>
+    <rect x="10" y="16" width="3" height="1" fill="#2D2D2D"/>
+
+    <!-- Tail -->
+    <rect x="14" y="11" width="1" height="1" fill="#2D2D2D"/>
+    <rect x="15" y="10" width="1" height="1" fill="#2D2D2D"/>
+    <rect x="16" y="9" width="1" height="1" fill="#2D2D2D"/>
+    <rect x="16" y="8" width="1" height="1" fill="#FF69B4"/>
+  </g>
+
+  <!-- === DECORATIVE STARS === -->
+  <g fill="#FFB6C1" opacity="0.5">
+    <rect x="220" y="30" width="4" height="4" rx="1"/>
+    <rect x="250" y="160" width="6" height="6" rx="1"/>
+    <rect x="580" y="25" width="5" height="5" rx="1"/>
+    <rect x="560" y="165" width="4" height="4" rx="1"/>
+    <rect x="340" y="15" width="3" height="3" rx="1"/>
+    <rect x="460" y="175" width="4" height="4" rx="1"/>
+  </g>
+
+  <!-- Small pixel hearts -->
+  <g fill="#FF69B4" opacity="0.4">
+    <!-- Heart 1 -->
+    <rect x="270" y="40" width="3" height="3"/>
+    <rect x="276" y="40" width="3" height="3"/>
+    <rect x="268" y="43" width="13" height="3"/>
+    <rect x="270" y="46" width="9" height="3"/>
+    <rect x="272" y="49" width="5" height="3"/>
+    <rect x="274" y="52" width="1" height="1"/>
+
+    <!-- Heart 2 -->
+    <rect x="530" y="140" width="3" height="3"/>
+    <rect x="536" y="140" width="3" height="3"/>
+    <rect x="528" y="143" width="13" height="3"/>
+    <rect x="530" y="146" width="9" height="3"/>
+    <rect x="532" y="149" width="5" height="3"/>
+    <rect x="534" y="152" width="1" height="1"/>
+  </g>
+
+  <!-- === RIGHT KUROMI (at computer, matching pfp) === -->
+  <g transform="translate(560, 24) scale(4)">
+    <!-- Hood/hat -->
+    <rect x="4" y="0" width="1" height="1" fill="#2D2D2D"/>
+    <rect x="12" y="0" width="1" height="1" fill="#2D2D2D"/>
+    <rect x="3" y="1" width="2" height="1" fill="#2D2D2D"/>
+    <rect x="12" y="1" width="2" height="1" fill="#2D2D2D"/>
+    <rect x="3" y="2" width="3" height="1" fill="#2D2D2D"/>
+    <rect x="11" y="2" width="3" height="1" fill="#2D2D2D"/>
+    <rect x="3" y="3" width="11" height="1" fill="#2D2D2D"/>
+    <rect x="2" y="4" width="13" height="1" fill="#2D2D2D"/>
+    <rect x="2" y="5" width="13" height="1" fill="#2D2D2D"/>
+    <rect x="7" y="4" width="3" height="1" fill="#FF69B4"/>
+    <rect x="7" y="5" width="1" height="1" fill="#FF69B4"/>
+    <rect x="9" y="5" width="1" height="1" fill="#FF69B4"/>
+
+    <!-- Face -->
+    <rect x="3" y="6" width="11" height="1" fill="white"/>
+    <rect x="2" y="7" width="13" height="1" fill="white"/>
+    <rect x="2" y="8" width="13" height="1" fill="white"/>
+    <rect x="3" y="9" width="11" height="1" fill="white"/>
+    <rect x="3" y="10" width="11" height="1" fill="white"/>
+    <rect x="4" y="11" width="9" height="1" fill="white"/>
+
+    <!-- Eyes -->
+    <rect x="5" y="7" width="2" height="2" fill="#4B0082"/>
+    <rect x="10" y="7" width="2" height="2" fill="#4B0082"/>
+    <rect x="5" y="7" width="1" height="1" fill="white"/>
+    <rect x="10" y="7" width="1" height="1" fill="white"/>
+
+    <!-- Mouth -->
+    <rect x="7" y="9" width="3" height="1" fill="#FF69B4"/>
+    <rect x="8" y="10" width="1" height="1" fill="#FF69B4"/>
+
+    <!-- Body -->
+    <rect x="4" y="12" width="9" height="1" fill="#2D2D2D"/>
+    <rect x="3" y="13" width="11" height="1" fill="#2D2D2D"/>
+    <rect x="3" y="14" width="11" height="1" fill="#2D2D2D"/>
+    <rect x="7" y="12" width="3" height="1" fill="#FF69B4"/>
+
+    <!-- Arms reaching to keyboard -->
+    <rect x="1" y="13" width="2" height="1" fill="white"/>
+    <rect x="14" y="13" width="2" height="1" fill="white"/>
+
+    <!-- Computer monitor -->
+    <rect x="-4" y="9" width="5" height="4" fill="#555"/>
+    <rect x="-3" y="10" width="3" height="2" fill="#7B68EE"/>
+    <!-- Monitor stand -->
+    <rect x="-2" y="13" width="1" height="1" fill="#555"/>
+
+    <!-- Desk -->
+    <rect x="-5" y="14" width="10" height="1" fill="#8B7355"/>
+
+    <!-- Tail -->
+    <rect x="14" y="11" width="1" height="1" fill="#2D2D2D"/>
+    <rect x="15" y="10" width="1" height="1" fill="#2D2D2D"/>
+    <rect x="16" y="9" width="1" height="1" fill="#2D2D2D"/>
+    <rect x="16" y="8" width="1" height="1" fill="#FF69B4"/>
+
+    <!-- Feet -->
+    <rect x="4" y="15" width="3" height="1" fill="#2D2D2D"/>
+    <rect x="10" y="15" width="3" height="1" fill="#2D2D2D"/>
+  </g>
+
+  <!-- === CENTER TEXT === -->
+  <text x="400" y="95" text-anchor="middle" font-family="'Courier New', monospace" font-size="18" font-weight="bold" fill="#2D2D2D">
+    Welcome to my profile!
+  </text>
+  <text x="400" y="125" text-anchor="middle" font-family="'Courier New', monospace" font-size="12" fill="#FF69B4">
+    ~ coding with kuromi vibes ~
+  </text>
+
+  <!-- Pixel border accents -->
+  <rect x="0" y="0" width="800" height="4" rx="2" fill="#FFB6C1" opacity="0.6"/>
+  <rect x="0" y="196" width="800" height="4" rx="2" fill="#FFB6C1" opacity="0.6"/>
+</svg>
