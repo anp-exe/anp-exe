@@ -1,6 +1,8 @@
 <p style="background-color:#FFE4E8; padding:20px; border-radius:10px;">
 </p>
 
+<div align="center">
+
 ## Hello, I'm Anna! ✨
 
 ---
@@ -32,26 +34,21 @@ No activity tracked
 
 ## DataCamp Portfolio 📊
 
-  <p align="center">
+<p align="center">
 <a href="https://www.datacamp.com/portfolio/xannxbelle05">
     <img src="https://img.shields.io/badge/DataCamp-Profile-FFC0CB?style=for-the-badge&logo=datacamp&logoColor=white" alt="DataCamp Profile">
 </a>
-  </p>
+</p>
 
 ### Industry Qualifications
-- [Associate Data Scientist](./assets/Associate_DS.pdf)
+[Associate Data Scientist](./assets/Associate_DS.pdf)
 
 ### Certificates 📜
-- [Data Scientist](./assets/Datascientist.pdf)
-- [Associate Data Scientist](./assets/Associate_DS.pdf)
-- [Data Analyst](./assets/data_analyst_cert.pdf)
-- [Python Fundamentals](./assets/python_fun_cert.pdf)
-- [MATLAB](./assets/matlab%202.pdf)
-- [GitHub Foundations](./assets/Github_Foundations.pdf)
-  
+[Data Scientist](./assets/Datascientist.pdf) · [Associate Data Scientist](./assets/Associate_DS.pdf) · [Data Analyst](./assets/data_analyst_cert.pdf) · [Python Fundamentals](./assets/python_fun_cert.pdf) · [MATLAB](./assets/matlab%202.pdf) · [GitHub Foundations](./assets/Github_Foundations.pdf)
+
 ---
 
-## Currently Reading📚
+## Currently Reading 📚
 
 <table align="center">
   <tr>
@@ -75,25 +72,38 @@ No activity tracked
 ---
 
 ### 🎓 Education
-- **BSc Artificial Intelligence and Philosophy - King's College London**
-- **BEng Robotics Engineering** - University of Bath 
-- **[Access to HE Certificate](./assets/AccessHEResults.jpeg)** - 45/45 Distinctions 🏆
-  - *According to [Access to HE statistics](https://www.accesstohe.ac.uk/docs/access/regulating-access-documents/access-to-he-key-statistics-2022-34.pdf?sfvrsn=3bb8b881_3), less than 16% of students who completed the course achieved a full distinction profile* 
+**BSc Artificial Intelligence and Philosophy** — King's College London<br>
+**BEng Robotics Engineering** — University of Bath<br>
+**[Access to HE Certificate](./assets/AccessHEResults.jpeg)** — 45/45 Distinctions 🏆<br>
+<sub><i>According to <a href="https://www.accesstohe.ac.uk/docs/access/regulating-access-documents/access-to-he-key-statistics-2022-34.pdf?sfvrsn=3bb8b881_3">Access to HE statistics</a>, less than 16% of students who completed the course achieved a full distinction profile</i></sub>
 
 ### 💻 Past Experience
-- **Junior Engineer** @ Team Bath Racing Electric (2025)
-  - [TBRE-Website](https://www.teambathracingelectric.com/)
-- **Volunteer** @ Code Club (2024-2025)
+**Junior Engineer** @ [Team Bath Racing Electric](https://www.teambathracingelectric.com/) (2025)<br>
+**Volunteer** @ Code Club (2024–2025)
 
 ### Interests 🌟
--  Chess (at my peak I was [1500 ECF standard](https://rating.englishchess.org.uk/players?ECF_code=365251J).)
+Chess — at my peak I was [1500 ECF standard](https://rating.englishchess.org.uk/players?ECF_code=365251J)
 
 ### Languages 🌐
 
-| Language      | Proficiency                                                               |
-| ------------- | ------------------------------------------------------------------------- |
-| English       |  Native                                                                   |
-| Russian       |  Native                                                                   |
+<table align="center">
+  <tr>
+    <th>Language</th>
+    <th>Proficiency</th>
+  </tr>
+  <tr>
+    <td align="center">English</td>
+    <td align="center">Native</td>
+  </tr>
+  <tr>
+    <td align="center">Russian</td>
+    <td align="center">Native</td>
+  </tr>
+</table>
+
+---
+
+## Coding Challenges 🎮
 
 <p align="center">
   <a href="https://www.codingame.com/profile/e812ad2ad96f148f77e20abf6e36e9db1647607">
@@ -108,3 +118,5 @@ No activity tracked
 <p align="center">
   <img src="./assets/running-cats.svg" width="100%" alt="Running cats animation">
 </p>
+
+</div>
