@@ -56,23 +56,6 @@ No activity tracked
 
 ---
 
-## Currently Reading 📚
-
-<table align="center">
-  <tr>
-    <td align="center" width="200">
-      <a href="https://github.com/anp-exe/Maths"><b>No BS guide to linear algebra</b></a><br>
-      <i>by Ivan Savov</i>
-    </td>
-     <td align="center" width="200">
-      <a href="https://github.com/anp-exe/ThinkStats"><b>Think Stats, 3rd edition</b></a><br>
-      <i>by Allen B Downey</i>
-    </td>
-  </tr>
-</table>
-
----
-
 ### 🎓 Education
 **BSc Artificial Intelligence and Philosophy** — King's College London<br>
 **BEng Robotics Engineering** — University of Bath<br>
@@ -90,10 +73,29 @@ Chess — at my peak I was [1500 ECF standard](https://rating.englishchess.org.u
 
 **English** — Native &nbsp;|&nbsp; **Russian** — Native
 
+### Currently Reading 📚
+
+<table align="center">
+  <tr>
+    <td align="center" width="200">
+      <a href="https://github.com/anp-exe/Maths"><b>No BS guide to linear algebra</b></a><br>
+      <i>by Ivan Savov</i>
+    </td>
+     <td align="center" width="200">
+      <a href="https://github.com/anp-exe/ThinkStats"><b>Think Stats, 3rd edition</b></a><br>
+      <i>by Allen B Downey</i>
+    </td>
+  </tr>
+</table>
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/anp-exe/anp-exe/output/github-contribution-grid-snake-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/anp-exe/anp-exe/output/github-contribution-grid-snake.svg" />
   <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/anp-exe/anp-exe/output/github-contribution-grid-snake.svg" />
 </picture>
+
+---
+
+<img src="https://github-readme-stats.vercel.app/api?username=anp-exe&show_icons=true&bg_color=FFF0F3&title_color=FF8FA3&text_color=555555&icon_color=FFB6C1&border_color=FFB6C1&border_radius=10" alt="Anna's GitHub Stats" />
 
 </div>
