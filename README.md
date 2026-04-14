@@ -16,7 +16,8 @@
   <img src="https://img.shields.io/badge/PyCharm-FFB6C1?style=for-the-badge&logo=pycharm&logoColor=white" alt="PyCharm">
 </p>
 
-<img src="https://raw.githubusercontent.com/anp-exe/anp-exe/output/github-metrics.svg" alt="GitHub Metrics" />
+<img src="https://github-contributor-stats.vercel.app/api?username=anp-exe&title_color=FFB6C1&text_color=FFB6C1&icon_color=FFB6C1&bg_color=00000000&hide_border=true&show_icons=true&include_all_commits=true&count_private=true&disable_animations=true" alt="GitHub Contributor Stats" />
+<img src="https://streak-stats.demolab.com/?user=anp-exe&hide_border=true&background=00000000&border=FFB6C1&stroke=FFB6C1&ring=FF69B4&fire=FF69B4&currStreakNum=FFB6C1&sideNums=FFB6C1&currStreakLabel=FFB6C1&sideLabels=FFB6C1&dates=FFB6C1" alt="GitHub Streak" />
 
 
 <!--START_SECTION:waka-->
