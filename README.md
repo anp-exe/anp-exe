@@ -72,7 +72,10 @@ Other         0 secs                ░░░░░░░░░░░░░░�
 **Volunteer** @ Code Club (2024–2025)
 
 ### Interests 🌟
-Chess — at my peak I was [1500 ECF standard](https://rating.englishchess.org.uk/players?ECF_code=365251J)
+Chess — at my peak I was [1500 ECF standard](https://rating.englishchess.org.uk/players?ECF_code=365251J)<br>
+<a href="https://www.chess.com/member/anp-exe">
+  <img src="https://img.shields.io/badge/Chess.com-anp--exe-FFB6C1?style=flat-square&logo=chess.com&logoColor=white" alt="Chess.com">
+</a>
 
 ### Languages 🌐
 
