@@ -58,6 +58,8 @@ Other         0 secs                ░░░░░░░░░░░░░░�
 
 ---
 
+<details>
+  <summary><b>All About Me</b></summary>
 
 ### 🎓 Education
 **BSc Artificial Intelligence and Philosophy** — King's College London<br>
@@ -90,6 +92,8 @@ Chess — at my peak I was [1500 ECF standard](https://rating.englishchess.org.u
     </td>
   </tr>
 </table>
+
+</details>
 
 <p align="center">
   <sub>&#x2661; &nbsp; &#x2661; &nbsp; &#x2661;</sub>
