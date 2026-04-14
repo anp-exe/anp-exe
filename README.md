@@ -34,7 +34,7 @@ Other         0 secs                ░░░░░░░░░░░░░░�
 
 ---
 
-## Portfolio & Profiles 🌐
+### Portfolio & Profiles 🌐
 
 <p align="center">
   <a href="https://www.datacamp.com/portfolio/xannxbelle05">
@@ -59,7 +59,7 @@ Other         0 secs                ░░░░░░░░░░░░░░�
 ---
 
 <details>
-  <summary><b>All About Me</b></summary>
+  <summary><h3>All About Me</h3></summary>
 
 ### 🎓 Education
 **BSc Artificial Intelligence and Philosophy** — King's College London<br>
