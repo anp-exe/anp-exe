@@ -32,40 +32,22 @@ Other         0 secs                ░░░░░░░░░░░░░░�
 
 <!--END_SECTION:waka-->
 
----
-
-### Portfolio & Profiles 🌐
-
-<p align="center">
-  <a href="https://www.datacamp.com/portfolio/xannxbelle05">
-    <img src="https://img.shields.io/badge/DataCamp-Profile-FFB6C1?style=for-the-badge&logo=datacamp&logoColor=white" alt="DataCamp Profile">
-  </a>
-  &nbsp;
-  <a href="https://www.codingame.com/profile/e812ad2ad96f148f77e20abf6e36e9db1647607">
-    <img src="https://img.shields.io/badge/CodinGame-Clash_of_Code-FFB6C1?style=for-the-badge&logo=codeforces&logoColor=white" alt="CodinGame Clash of Code">
-  </a>
-  &nbsp;
-  <a href="https://www.codedex.io/@anp-exe">
-    <img src="https://img.shields.io/badge/Codedex-%40anp--exe-FFB6C1?style=for-the-badge&logo=codementor&logoColor=white" alt="Codedex Profile">
-  </a>
-</p>
-
-### Industry Qualifications
-[Associate Data Scientist](./assets/Associate_DS.pdf)
-
-### Certificates 📜
-[Data Scientist](./assets/Datascientist.pdf) · [Associate Data Scientist](./assets/Associate_DS.pdf) · [Data Analyst](./assets/data_analyst_cert.pdf) · [Python Fundamentals](./assets/python_fun_cert.pdf) · [MATLAB](./assets/matlab%202.pdf) · [GitHub Foundations](./assets/Github_Foundations.pdf)
-
----
-
 <details>
-  <summary><h3>All About Me</h3></summary>
+  <summary><h2>All About Me 🌸</h2></summary>
 
 ### 🎓 Education
 **BSc Artificial Intelligence and Philosophy** — King's College London<br>
 **BEng Robotics Engineering** — University of Bath<br>
 **[Access to HE Certificate](./assets/AccessHEResults.jpeg)** — 45/45 Distinctions 🏆<br>
 <sub><i>According to <a href="https://www.accesstohe.ac.uk/docs/access/regulating-access-documents/access-to-he-key-statistics-2022-34.pdf?sfvrsn=3bb8b881_3">Access to HE statistics</a>, less than 16% of students who completed the course achieved a full distinction profile</i></sub>
+
+### Industry Qualifications
+
+[Associate Data Scientist](./assets/Associate_DS.pdf)
+
+### Certificates 📜
+
+[Data Scientist](./assets/Datascientist.pdf) · [Associate Data Scientist](./assets/Associate_DS.pdf) · [Data Analyst](./assets/data_analyst_cert.pdf) · [Python Fundamentals](./assets/python_fun_cert.pdf) · [MATLAB](./assets/matlab%202.pdf) · [GitHub Foundations](./assets/Github_Foundations.pdf)
 
 ### 💻 Past Experience
 **Junior Engineer** @ [Team Bath Racing Electric](https://www.teambathracingelectric.com/) (2025)<br>
@@ -97,6 +79,59 @@ Chess — at my peak I was [1500 ECF standard](https://rating.englishchess.org.u
 </table>
 
 </details>
+
+---
+<!-- Add more social media links as needed -->
+<div align="center">
+  <h2>Codedex #30NitesOfCode</h2>
+  <img src="https://www.codedex.io/images/code-nights/completion.gif">
+</div>
+<details>
+  <summary><h3>What is this? 🐉</h3></summary>
+
+🐉 This was a coding challenge introduced by the Codedex team as a way to develop good coding habits!
+
+<h3>How does this work?</h3>
+🐉 The user first starts off with a pet egg of their choosing. The continued participation in this challenge allows the pet to first evolve into a hatchling version. Eventually, the pet is able to transform into a fully grown pet evolution!
+<br>
+🐉 If the user does not participate for more than 2 days in a row, the pet will run away from home and the user is forced to start a new 30 Nites of Code challenge.
+<br>
+🐉 The user is required to make a post either in the OPC or on Twitter to track their progress. The post must include what coding related activities were completed that day.
+<br>
+🐉 You are able to see what activities were completed on what day by clicking on the Pet's name and scrolling down to the date's entry.
+<br>
+🐉 If the user is able to complete 30 Days in a row, there is an option to extend the challenge on a day by day basis!
+
+</details>
+
+<div align="center">
+  <h2>My Codedex Pets</h2>
+  <table>
+    <tr>
+      <td align="center">
+        <img src="https://www.codedex.io/images/code-nights/baby-happy-dragon.gif" alt="Plum">
+        <br>
+        <a href="https://www.codedex.io/@anp-exe/30-nites-of-code">Plum</a>
+      </td>
+    </tr>
+  </table>
+</div>
+
+### Portfolio & Profiles 🌐
+
+<p align="center">
+  <a href="https://www.datacamp.com/portfolio/xannxbelle05">
+    <img src="https://img.shields.io/badge/DataCamp-Profile-FFB6C1?style=for-the-badge&logo=datacamp&logoColor=white" alt="DataCamp Profile">
+  </a>
+  &nbsp;
+  <a href="https://www.codingame.com/profile/e812ad2ad96f148f77e20abf6e36e9db1647607">
+    <img src="https://img.shields.io/badge/CodinGame-Clash_of_Code-FFB6C1?style=for-the-badge&logo=codeforces&logoColor=white" alt="CodinGame Clash of Code">
+  </a>
+  &nbsp;
+  <a href="https://www.codedex.io/@anp-exe">
+    <img src="https://img.shields.io/badge/Codedex-%40anp--exe-FFB6C1?style=for-the-badge&logo=codementor&logoColor=white" alt="Codedex Profile">
+  </a>
+</p>
 
 <p align="center">
   <sub>&#x2661; &nbsp; &#x2661; &nbsp; &#x2661;</sub>
