@@ -39,7 +39,7 @@ Other         0 secs                ░░░░░░░░░░░░░░�
 ### 🎓 Education
 **BSc Artificial Intelligence and Philosophy** — King's College London<br>
 **BEng Robotics Engineering** — University of Bath<br>
-**[Access to HE Certificate](./assets/AccessHEResults.jpeg)** — 45/45 Distinctions 🏆<br>
+**Access to HE Certificate** — 45/45 Distinctions 🏆<br>
 <sub><i>According to <a href="https://www.accesstohe.ac.uk/docs/access/regulating-access-documents/access-to-he-key-statistics-2022-34.pdf?sfvrsn=3bb8b881_3">Access to HE statistics</a>, less than 16% of students who completed the course achieved a full distinction profile</i></sub>
 
 ### Industry Qualifications
@@ -55,10 +55,7 @@ Other         0 secs                ░░░░░░░░░░░░░░�
 **Volunteer** @ Code Club (2024–2025)
 
 ### Interests 🌟
-Chess — at my peak I was [1500 ECF standard](https://rating.englishchess.org.uk/players?ECF_code=365251J)<br>
-<a href="https://www.chess.com/member/anp-exe">
-  <img src="https://img.shields.io/badge/Chess.com-anp--exe-FFB6C1?style=flat-square&logo=chess.com&logoColor=white" alt="Chess.com">
-</a>
+Chess — at my peak I was [1500 ECF standard](https://rating.englishchess.org.uk/players?ECF_code=365251J)
 
 ### Languages 🌐
 
@@ -131,6 +128,10 @@ Chess — at my peak I was [1500 ECF standard](https://rating.englishchess.org.u
   &nbsp;
   <a href="https://www.codedex.io/@anp-exe">
     <img src="https://img.shields.io/badge/Codedex-%40anp--exe-FFB6C1?style=for-the-badge&logo=codementor&logoColor=white" alt="Codedex Profile">
+  </a>
+  &nbsp;
+  <a href="https://www.chess.com/member/anp-exe">
+    <img src="https://img.shields.io/badge/Chess.com-anp--exe-FFB6C1?style=for-the-badge&logo=chess.com&logoColor=white" alt="Chess.com">
   </a>
 </p>
 
