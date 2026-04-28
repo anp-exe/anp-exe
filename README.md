@@ -24,11 +24,11 @@
 <!--START_SECTION:waka-->
 
 ```txt
-Markdown           10 hrs 43 mins        ████████████████░░░░░░░░░   64.40 %
-Jupyter            3 hrs 35 mins         █████▒░░░░░░░░░░░░░░░░░░░   21.59 %
-TypeScript         1 hr 15 mins          ██░░░░░░░░░░░░░░░░░░░░░░░   07.52 %
-GitIgnore file     15 mins               ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.60 %
-Python             14 mins               ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.49 %
+Markdown           13 hrs 2 mins         █████████████████████▓░░░   86.77 %
+TypeScript         1 hr 15 mins          ██░░░░░░░░░░░░░░░░░░░░░░░   08.33 %
+Python             15 mins               ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.70 %
+CSS                10 mins               ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.21 %
+GitIgnore file     9 mins                ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.05 %
 ```
 
 <!--END_SECTION:waka-->
