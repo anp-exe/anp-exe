@@ -79,28 +79,6 @@ Chess — at my peak I was [1500 ECF standard](https://rating.englishchess.org.u
 </details>
 
 ---
-<!-- Add more social media links as needed -->
-<div align="center">
-  <h2>Codedex #30NitesOfCode</h2>
-  <img src="https://www.codedex.io/images/code-nights/completion.gif">
-</div>
-<details>
-  <summary><h3>What is this? 🐉</h3></summary>
-
-🐉 This was a coding challenge introduced by the Codedex team as a way to develop good coding habits!
-
-<h3>How does this work?</h3>
-🐉 The user first starts off with a pet egg of their choosing. The continued participation in this challenge allows the pet to first evolve into a hatchling version. Eventually, the pet is able to transform into a fully grown pet evolution!
-<br>
-🐉 If the user does not participate for more than 2 days in a row, the pet will run away from home and the user is forced to start a new 30 Nites of Code challenge.
-<br>
-🐉 The user is required to make a post either in the OPC or on Twitter to track their progress. The post must include what coding related activities were completed that day.
-<br>
-🐉 You are able to see what activities were completed on what day by clicking on the Pet's name and scrolling down to the date's entry.
-<br>
-🐉 If the user is able to complete 30 Days in a row, there is an option to extend the challenge on a day by day basis!
-
-</details>
 
 <div align="center">
   <h2>My Codedex Pets</h2>
