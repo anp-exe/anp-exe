@@ -48,7 +48,7 @@ Jupyter          1 min                 ░░░░░░░░░░░░░�
 
 ### Certificates 📜
 
-[Data Scientist](./assets/Datascientist.pdf) · [Associate Data Scientist](./assets/Associate_DS.pdf) · [Data Analyst](./assets/data_analyst_cert.pdf) · [Python Fundamentals](./assets/python_fun_cert.pdf) · [Python Codedex](./assets/python_codedex.pdf) · [MATLAB](./assets/matlab%202.pdf) · [GitHub Foundations](./assets/Github_Foundations.pdf)
+[Data Scientist](./assets/Datascientist.pdf) · [Associate Data Scientist](./assets/Associate_DS.pdf) · [Clash of Code - Legend](./assets/Certification%20%282%29.pdf) · [Data Analyst](./assets/data_analyst_cert.pdf) · [Python Fundamentals](./assets/python_fun_cert.pdf) · [Python Codedex](./assets/python_codedex.pdf) · [MATLAB](./assets/matlab%202.pdf) · [GitHub Foundations](./assets/Github_Foundations.pdf)
 
 ### 💻 Past Experience
 **Junior Engineer** @ [Team Bath Racing Electric](https://www.teambathracingelectric.com/) (2025)<br>
