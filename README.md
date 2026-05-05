@@ -80,18 +80,22 @@ Chess — at my peak I was [1500 ECF standard](https://rating.englishchess.org.u
 
 ---
 
-<div align="center">
-  <h2>My Codedex Pets</h2>
-  <table>
-    <tr>
-      <td align="center">
-        <img src="https://www.codedex.io/images/code-nights/baby-happy-dragon.gif" alt="Plum">
-        <br>
-        <a href="https://www.codedex.io/@anp-exe/30-nites-of-code">Plum</a>
-      </td>
-    </tr>
-  </table>
-</div>
+<details>
+  <summary><h2>My Codedex Pets</h2></summary>
+
+  <div align="center">
+    <table>
+      <tr>
+        <td align="center">
+          <img src="https://www.codedex.io/images/code-nights/baby-happy-dragon.gif" alt="Plum">
+          <br>
+          <a href="https://www.codedex.io/@anp-exe/30-nites-of-code">Plum</a>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+</details>
 
 ### Portfolio & Profiles 🌐
 
