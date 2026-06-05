@@ -5,7 +5,6 @@
 
 <img src="./assets/cat.gif" alt="Lo-fi Keyboard Animation" width="650"/>
 
-## Hello, I'm Anna!👩🏼‍💻
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-FFB6C1?style=for-the-badge&logo=python&logoColor=white" alt="Python">
