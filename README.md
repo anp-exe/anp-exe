@@ -92,22 +92,6 @@ TypeScript       4 mins                ▒░░░░░░░░░░░░�
 
 ---
 
-<details>
-  <summary><h2>My Codedex Pets</h2></summary>
-
-  <div align="center">
-    <table>
-      <tr>
-        <td align="center">
-          <img src="https://www.codedex.io/images/code-nights/baby-happy-dragon.gif" alt="Plum">
-          <br>
-          <a href="https://www.codedex.io/@anp-exe/30-nites-of-code">Plum</a>
-        </td>
-      </tr>
-    </table>
-  </div>
-
-</details>
 
 ### Portfolio & Profiles
 
@@ -133,8 +117,5 @@ TypeScript       4 mins                ▒░░░░░░░░░░░░�
   </a>
 </p>
 
-<p align="center">
-  <sub>&#x2661; &nbsp; &#x2661; &nbsp; &#x2661;</sub>
-</p>
 
 </div>
