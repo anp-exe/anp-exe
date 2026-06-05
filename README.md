@@ -34,7 +34,7 @@ TypeScript       4 mins                ▒░░░░░░░░░░░░�
 <!--END_SECTION:waka-->
 
 <details>
-  <summary><h2>𝓐𝓵𝓵 𝓐𝓫𝓸𝓾𝓽 𝓜𝓮 🌸</h2></summary>
+  <summary><h2>𝓐𝓵𝓵 𝓐𝓫𝓸𝓾𝓽 𝓜𝓮 </h2></summary>
 
 <div style="border:1px solid #FFB6C1; padding:12px; border-radius:10px; margin:10px 0; background-color:#FFF7F9;">
   <h3>🎓 Education</h3>
@@ -110,7 +110,7 @@ TypeScript       4 mins                ▒░░░░░░░░░░░░�
 
 </details>
 
-### Portfolio & Profiles 🌐
+### Portfolio & Profiles
 
 <p align="center">
   <a href="https://www.datacamp.com/portfolio/xannxbelle05">
