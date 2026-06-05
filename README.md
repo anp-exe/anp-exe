@@ -37,61 +37,56 @@ TypeScript       4 mins                ▒░░░░░░░░░░░░�
   <summary><h2>𝓐𝓵𝓵 𝓐𝓫𝓸𝓾𝓽 𝓜𝓮 🌸</h2></summary>
 
 <div style="border:1px solid #FFB6C1; padding:12px; border-radius:10px; margin:10px 0; background-color:#FFF7F9;">
-### 🎓 Education
-**BSc Artificial Intelligence and Philosophy** — King's College London<br>
-**BEng Robotics Engineering** — University of Bath<br>
-**Access to HE Certificate** — 45/45 Distinctions 🏆<br>
-<sub><i>According to <a href="https://www.accesstohe.ac.uk/docs/access/regulating-access-documents/access-to-he-key-statistics-2022-34.pdf?sfvrsn=3bb8b881_3">Access to HE statistics</a>, less than 16% of students who completed the course achieved a full distinction profile</i></sub>
+  <h3>🎓 Education</h3>
+  <p><strong>BSc Artificial Intelligence and Philosophy</strong> — King's College London<br>
+  <strong>BEng Robotics Engineering</strong> — University of Bath<br>
+  <strong>Access to HE Certificate</strong> — 45/45 Distinctions 🏆</p>
+  <sub><i>According to <a href="https://www.accesstohe.ac.uk/docs/access/regulating-access-documents/access-to-he-key-statistics-2022-34.pdf?sfvrsn=3bb8b881_3">Access to HE statistics</a>, less than 16% of students who completed the course achieved a full distinction profile</i></sub>
 </div>
 
 <div style="border:1px solid #FFB6C1; padding:12px; border-radius:10px; margin:10px 0; background-color:#FFF7F9;">
-### Industry Qualifications
-
-[Associate Data Scientist](./assets/Associate_DS.pdf)
-
-<a href="https://www.credly.com/badges/f2462771-efa4-4541-ac13-a0cec2dcbae7/linked_in_profile">
-  <img src="./assets/img_1.png" alt="AWS Certified Cloud Practitioner" width="180"/>
-</a>
+  <h3>Industry Qualifications</h3>
+  <p><a href="./assets/Associate_DS.pdf">Associate Data Scientist</a></p>
+  <a href="https://www.credly.com/badges/f2462771-efa4-4541-ac13-a0cec2dcbae7/linked_in_profile">
+    <img src="./assets/img_1.png" alt="AWS Certified Cloud Practitioner" width="180"/>
+  </a>
 </div>
 
 <div style="border:1px solid #FFB6C1; padding:12px; border-radius:10px; margin:10px 0; background-color:#FFF7F9;">
-### Certificates 📜
-
-[Data Scientist](./assets/Datascientist.pdf) · [Associate Data Scientist](./assets/Associate_DS.pdf) · [Clash of Code - Legend](./assets/Certification%20%282%29.pdf) · [Data Analyst](./assets/data_analyst_cert.pdf) · [Python Fundamentals](./assets/python_fun_cert.pdf) · [Python Codedex](./assets/python_codedex.pdf) · [MATLAB](./assets/matlab%202.pdf) · [GitHub Foundations](./assets/Github_Foundations.pdf)
+  <h3>Certificates 📜</h3>
+  <p><a href="./assets/Datascientist.pdf">Data Scientist</a> · <a href="./assets/Associate_DS.pdf">Associate Data Scientist</a> · <a href="./assets/Certification%20%282%29.pdf">Clash of Code - Legend</a> · <a href="./assets/data_analyst_cert.pdf">Data Analyst</a> · <a href="./assets/python_fun_cert.pdf">Python Fundamentals</a> · <a href="./assets/python_codedex.pdf">Python Codedex</a> · <a href="./assets/matlab%202.pdf">MATLAB</a> · <a href="./assets/Github_Foundations.pdf">GitHub Foundations</a></p>
 </div>
 
 <div style="border:1px solid #FFB6C1; padding:12px; border-radius:10px; margin:10px 0; background-color:#FFF7F9;">
-### 💻 Past Experience
-**Junior Engineer** @ [Team Bath Racing Electric](https://www.teambathracingelectric.com/) (2025)<br>
-**Volunteer** @ Code Club (2024–2025)
+  <h3>💻 Past Experience</h3>
+  <p><strong>Junior Engineer</strong> @ <a href="https://www.teambathracingelectric.com/">Team Bath Racing Electric</a> (2025)<br>
+  <strong>Volunteer</strong> @ Code Club (2024–2025)</p>
 </div>
 
 <div style="border:1px solid #FFB6C1; padding:12px; border-radius:10px; margin:10px 0; background-color:#FFF7F9;">
-### Interests 🌟
-Chess, at my peak I was [1500 ECF standard](https://rating.englishchess.org.uk/players?ECF_code=365251J)
+  <h3>Interests 🌟</h3>
+  <p>Chess, at my peak I was <a href="https://rating.englishchess.org.uk/players?ECF_code=365251J">1500 ECF standard</a></p>
 </div>
 
 <div style="border:1px solid #FFB6C1; padding:12px; border-radius:10px; margin:10px 0; background-color:#FFF7F9;">
-### Languages 🌐
-
-**English**: Native &nbsp;|&nbsp; **Russian**: Native
+  <h3>Languages 🌐</h3>
+  <p><strong>English</strong>: Native &nbsp;|&nbsp; <strong>Russian</strong>: Native</p>
 </div>
 
 <div style="border:1px solid #FFB6C1; padding:12px; border-radius:10px; margin:10px 0; background-color:#FFF7F9;">
-### Currently Reading 📚
-
-<table align="center">
-  <tr>
-    <td align="center" width="200">
-      <a href="https://github.com/anp-exe/Maths"><b>No BS guide to linear algebra</b></a><br>
-      <i>by Ivan Savov</i>
-    </td>
-     <td align="center" width="200">
-      <a href="https://github.com/anp-exe/ThinkStats"><b>Think Stats, 3rd edition</b></a><br>
-      <i>by Allen B Downey</i>
-    </td>
-  </tr>
-</table>
+  <h3>Currently Reading 📚</h3>
+  <table align="center">
+    <tr>
+      <td align="center" width="200">
+        <a href="https://github.com/anp-exe/Maths"><b>No BS guide to linear algebra</b></a><br>
+        <i>by Ivan Savov</i>
+      </td>
+      <td align="center" width="200">
+        <a href="https://github.com/anp-exe/ThinkStats"><b>Think Stats, 3rd edition</b></a><br>
+        <i>by Allen B Downey</i>
+      </td>
+    </tr>
+  </table>
 </div>
 
 </details>
