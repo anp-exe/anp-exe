@@ -3,7 +3,7 @@
 
 <div align="center">
 
-<img src="./assets/Lo_fi_Keyboard_Animation_Loop.gif" alt="Lo-fi Keyboard Animation" width="800"/>
+<img src="./assets/cat.gif" alt="Lo-fi Keyboard Animation" width="800"/>
 
 ## Hello, I'm Anna!👩🏼‍💻
 
@@ -46,6 +46,10 @@ TypeScript       6 mins                ▒░░░░░░░░░░░░�
 
 [Associate Data Scientist](./assets/Associate_DS.pdf)
 
+<a href="https://www.credly.com/badges/f2462771-efa4-4541-ac13-a0cec2dcbae7/linked_in_profile">
+  <img src="./assets/img_1.png" alt="AWS Certified Cloud Practitioner" width="180"/>
+</a>
+
 ### Certificates 📜
 
 [Data Scientist](./assets/Datascientist.pdf) · [Associate Data Scientist](./assets/Associate_DS.pdf) · [Clash of Code - Legend](./assets/Certification%20%282%29.pdf) · [Data Analyst](./assets/data_analyst_cert.pdf) · [Python Fundamentals](./assets/python_fun_cert.pdf) · [Python Codedex](./assets/python_codedex.pdf) · [MATLAB](./assets/matlab%202.pdf) · [GitHub Foundations](./assets/Github_Foundations.pdf)
@@ -55,11 +59,11 @@ TypeScript       6 mins                ▒░░░░░░░░░░░░�
 **Volunteer** @ Code Club (2024–2025)
 
 ### Interests 🌟
-Chess — at my peak I was [1500 ECF standard](https://rating.englishchess.org.uk/players?ECF_code=365251J)
+Chess, at my peak I was [1500 ECF standard](https://rating.englishchess.org.uk/players?ECF_code=365251J)
 
 ### Languages 🌐
 
-**English** — Native &nbsp;|&nbsp; **Russian** — Native
+**English**: Native &nbsp;|&nbsp; **Russian**: Native
 
 ### Currently Reading 📚
 
