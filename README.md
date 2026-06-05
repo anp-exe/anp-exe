@@ -3,7 +3,7 @@
 
 <div align="center">
 
-<img src="./assets/cat.gif" alt="Lo-fi Keyboard Animation" width="800"/>
+<img src="./assets/cat.gif" alt="Lo-fi Keyboard Animation" width="650"/>
 
 ## Hello, I'm Anna!👩🏼‍💻
 
@@ -36,12 +36,15 @@ TypeScript       4 mins                ▒░░░░░░░░░░░░�
 <details>
   <summary><h2>𝓐𝓵𝓵 𝓐𝓫𝓸𝓾𝓽 𝓜𝓮 🌸</h2></summary>
 
+<div style="border:1px solid #FFB6C1; padding:12px; border-radius:10px; margin:10px 0; background-color:#FFF7F9;">
 ### 🎓 Education
 **BSc Artificial Intelligence and Philosophy** — King's College London<br>
 **BEng Robotics Engineering** — University of Bath<br>
 **Access to HE Certificate** — 45/45 Distinctions 🏆<br>
 <sub><i>According to <a href="https://www.accesstohe.ac.uk/docs/access/regulating-access-documents/access-to-he-key-statistics-2022-34.pdf?sfvrsn=3bb8b881_3">Access to HE statistics</a>, less than 16% of students who completed the course achieved a full distinction profile</i></sub>
+</div>
 
+<div style="border:1px solid #FFB6C1; padding:12px; border-radius:10px; margin:10px 0; background-color:#FFF7F9;">
 ### Industry Qualifications
 
 [Associate Data Scientist](./assets/Associate_DS.pdf)
@@ -49,22 +52,32 @@ TypeScript       4 mins                ▒░░░░░░░░░░░░�
 <a href="https://www.credly.com/badges/f2462771-efa4-4541-ac13-a0cec2dcbae7/linked_in_profile">
   <img src="./assets/img_1.png" alt="AWS Certified Cloud Practitioner" width="180"/>
 </a>
+</div>
 
+<div style="border:1px solid #FFB6C1; padding:12px; border-radius:10px; margin:10px 0; background-color:#FFF7F9;">
 ### Certificates 📜
 
 [Data Scientist](./assets/Datascientist.pdf) · [Associate Data Scientist](./assets/Associate_DS.pdf) · [Clash of Code - Legend](./assets/Certification%20%282%29.pdf) · [Data Analyst](./assets/data_analyst_cert.pdf) · [Python Fundamentals](./assets/python_fun_cert.pdf) · [Python Codedex](./assets/python_codedex.pdf) · [MATLAB](./assets/matlab%202.pdf) · [GitHub Foundations](./assets/Github_Foundations.pdf)
+</div>
 
+<div style="border:1px solid #FFB6C1; padding:12px; border-radius:10px; margin:10px 0; background-color:#FFF7F9;">
 ### 💻 Past Experience
 **Junior Engineer** @ [Team Bath Racing Electric](https://www.teambathracingelectric.com/) (2025)<br>
 **Volunteer** @ Code Club (2024–2025)
+</div>
 
+<div style="border:1px solid #FFB6C1; padding:12px; border-radius:10px; margin:10px 0; background-color:#FFF7F9;">
 ### Interests 🌟
 Chess, at my peak I was [1500 ECF standard](https://rating.englishchess.org.uk/players?ECF_code=365251J)
+</div>
 
+<div style="border:1px solid #FFB6C1; padding:12px; border-radius:10px; margin:10px 0; background-color:#FFF7F9;">
 ### Languages 🌐
 
 **English**: Native &nbsp;|&nbsp; **Russian**: Native
+</div>
 
+<div style="border:1px solid #FFB6C1; padding:12px; border-radius:10px; margin:10px 0; background-color:#FFF7F9;">
 ### Currently Reading 📚
 
 <table align="center">
@@ -79,6 +92,7 @@ Chess, at my peak I was [1500 ECF standard](https://rating.englishchess.org.uk/p
     </td>
   </tr>
 </table>
+</div>
 
 </details>
 
