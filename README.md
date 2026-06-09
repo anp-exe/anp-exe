@@ -119,4 +119,6 @@ Jupyter            12 mins               ▓░░░░░░░░░░░░
 
 <img src="https://komarev.com/ghpvc/?username=anp-exe" alt="anp-exe" /> 
 
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anp-exe&layout=pie)
+
 </div>
