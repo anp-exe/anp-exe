@@ -20,6 +20,7 @@
   ![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=matplotlib&logoColor=white)
   ![Seaborn](https://img.shields.io/badge/Seaborn-7DB0BC?style=for-the-badge&logo=seaborn&logoColor=white)
   ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
+  ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
 </p>
 
 <p align="center">
