@@ -14,6 +14,8 @@
   <img src="https://img.shields.io/badge/MATLAB-FFB6C1?style=for-the-badge&logo=mathworks&logoColor=white" alt="MATLAB">
   <img src="https://img.shields.io/badge/PyCharm-FFB6C1?style=for-the-badge&logo=pycharm&logoColor=white" alt="PyCharm">
 
+  **Frequently Used Libraries <3**
+  
   ![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
   ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
   ![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=matplotlib&logoColor=white)
