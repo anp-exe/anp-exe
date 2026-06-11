@@ -13,6 +13,12 @@
   <img src="https://img.shields.io/badge/AI-FFB6C1?style=for-the-badge&logo=tensorflow&logoColor=white" alt="AI">
   <img src="https://img.shields.io/badge/MATLAB-FFB6C1?style=for-the-badge&logo=mathworks&logoColor=white" alt="MATLAB">
   <img src="https://img.shields.io/badge/PyCharm-FFB6C1?style=for-the-badge&logo=pycharm&logoColor=white" alt="PyCharm">
+
+  ![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
+  ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
+  ![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=matplotlib&logoColor=white)
+  ![Seaborn](https://img.shields.io/badge/Seaborn-7DB0BC?style=for-the-badge&logo=seaborn&logoColor=white)
+  ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
 </p>
 
 <p align="center">
