@@ -27,19 +27,6 @@
   <img src="https://streak-stats.demolab.com/?user=anp-exe&hide_border=true&background=00000000&border=FFB6C1&stroke=FFB6C1&ring=FF69B4&fire=FF69B4&currStreakNum=FFB6C1&sideNums=FFB6C1&currStreakLabel=FFB6C1&sideLabels=FFB6C1&dates=FFB6C1" alt="GitHub Streak" />
 </p>
 
-
-<!--START_SECTION:waka-->
-
-```txt
-Other            9 hrs 21 mins         █████████████▓░░░░░░░░░░░   54.76 %
-Markdown         4 hrs 28 mins         ██████▓░░░░░░░░░░░░░░░░░░   26.19 %
-Python           1 hr 28 mins          ██░░░░░░░░░░░░░░░░░░░░░░░   08.65 %
-HTML             1 hr 11 mins          █▓░░░░░░░░░░░░░░░░░░░░░░░   06.96 %
-Jupyter          15 mins               ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.49 %
-```
-
-<!--END_SECTION:waka-->
-
 <details>
   <summary><h2>𝓐𝓵𝓵 𝓐𝓫𝓸𝓾𝓽 𝓜𝓮 </h2></summary>
 
