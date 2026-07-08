@@ -106,7 +106,7 @@
     <img src="https://img.shields.io/badge/Chess.com-anp--exe-FFB6C1?style=for-the-badge&logo=chess.com&logoColor=white" alt="Chess.com">
   </a>
   &nbsp;
-  <a href="https://anp-exe.github.io/portfolio/">
+  <a href="https://anp-exe.github.io/anna/">
     <img src="https://img.shields.io/badge/Portfolio-anp--exe-FFB6C1?style=for-the-badge&logo=github&logoColor=white" alt="Portfolio">
   </a>
 </p>
