@@ -3,7 +3,7 @@
 
 <div align="center">
 
-<img src="./assets/cat.gif" alt="Lo-fi Keyboard Animation" width="650"/>
+
 
 
 <p align="center">
