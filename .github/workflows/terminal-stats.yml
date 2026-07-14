@@ -1,0 +1,52 @@
+name: terminal-stats
+
+# Regenerates assets/terminal.svg with fresh GitHub stats.
+# Uses the automatic GITHUB_TOKEN only — no secrets to configure.
+
+on:
+  schedule:
+    - cron: "17 */12 * * *"   # twice a day
+  push:
+    branches: [ main, master ]
+    paths:
+      - "assets/generate_readme.py"
+      - "assets/portrait.txt"
+      - ".github/workflows/terminal-stats.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: terminal-stats
+  cancel-in-progress: true
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Render terminal SVG
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          COUNT_LOC: "1"
+        run: python3 assets/generate_readme.py
+
+      - name: Commit if changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/terminal.svg assets/stats_cache.json
+          if git diff --cached --quiet; then
+            echo "no stat changes"
+          else
+            git commit -m "chore: refresh terminal stats [skip ci]"
+            git push
+          fi
