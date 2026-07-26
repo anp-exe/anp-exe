@@ -7,6 +7,12 @@
   that GitHub serves as an <img> cannot load external images, so anything from
   skillicons.dev or shields.io has to be its own <img> in this file.
 
+  Cell widths are PERCENTAGES, not pixels, so the columns stay in proportion on
+  a phone. With a fixed px width the left cell cannot shrink, so on a narrow
+  screen the card cell compresses while the left column keeps its size and ends
+  up dominating. The px widths on the images below act as maximums only —
+  GitHub's own CSS (max-width: 100%) scales them down inside a narrower cell.
+
   THE CARD
   assets/terminal.svg (dark) + terminal_light.svg (light) are the SOURCE OF
   TRUTH for the card's layout — edit them directly if you want.
@@ -24,9 +30,9 @@
 
 <table>
   <tr>
-    <td width="230" valign="top" align="center">
+    <td width="26%" valign="top" align="center">
 
-<img src="./assets/melody.png" width="190" alt="My Melody">
+<img src="./assets/melody.png" width="160" alt="My Melody">
 
 <a href="https://skillicons.dev">
   <img src="https://skillicons.dev/icons?i=github,python,pycharm,pytorch,scikitlearn,matlab,aws,obsidian,apple,figma,linkedin&perline=3" alt="Skills: GitHub, Python, PyCharm, PyTorch, scikit-learn, MATLAB, AWS, Obsidian, Apple, Figma, LinkedIn">
@@ -48,7 +54,7 @@
 </a>
 
   </td>
-  <td valign="top">
+  <td width="74%" valign="top">
 
 <a href="https://github.com/anp-exe">
   <picture>
