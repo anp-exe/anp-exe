@@ -53,6 +53,8 @@
   <img src="https://images.credly.com/size/340x340/images/4d4693bb-530e-4bca-9327-de07f3aa2348/image.png" width="70" alt="AWS Certified AI Practitioner — verify on Credly">
 </a>
 
+<img src="./assets/strawb.png" width="90" alt="">
+
   </td>
   <td width="74%" valign="top">
 
