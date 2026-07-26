@@ -32,6 +32,10 @@
   <img src="https://skillicons.dev/icons?i=github,python,pytorch,scikitlearn,aws&perline=3" alt="Skills: GitHub, Python, PyTorch, scikit-learn, AWS">
 </a>
 
+<a href="https://medium.com/@Joy-P/i-was-the-only-woman-playing-among-50-or-100-men-fc39f6fedbe5">
+  <img src="https://img.shields.io/badge/Featured%20on%20Medium-12100E?style=for-the-badge&logo=medium&logoColor=white" alt="Featured on Medium — “I was the only woman playing among 50 or 100 men”">
+</a>
+
   </td>
   <td valign="top">
 
