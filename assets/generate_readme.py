@@ -1,6 +1,17 @@
 #!/usr/bin/env python3
 """
-generate_readme.py  --  render the berry cyberpunk terminal profile SVG.
+generate_readme.py  --  SCAFFOLD the terminal profile SVGs from scratch.
+
+  ⚠  This OVERWRITES assets/terminal.svg and assets/terminal_light.svg
+     completely, including any ASCII art you have hand-tuned inside them.
+     Back those files up before you run it.
+
+The SVGs are the source of truth for the layout AND the art. Day to day you
+want assets/update_stats.py, which only rewrites the stat numbers in place and
+leaves everything else alone. That is the split Andrew6rant uses: a committed,
+hand-editable SVG plus a script that touches nothing but the figures.
+
+Run this only when you want to rebuild the layout (new rows, colours, fonts).
 
 Pulls live GitHub stats (repos, commits, stars, followers, lines of code)
 and paints them into a self-contained SVG that keeps a monospace terminal
@@ -303,6 +314,15 @@ PROFILE = [
 ]
 
 STATS_HEADER = "GitHub Stats"
+
+# Row label -> element id. These are the only numbers update_stats.py touches.
+STAT_IDS = {
+    "Repos": "repos",
+    "Stars": "stars",
+    "Commits": "commits",
+    "Followers": "followers",
+    "Lines of Code on GitHub": "loc",
+}
 ROW_CHARS = 64          # nominal width of the info column, in characters
 
 # Detail of the ASCII portrait.
@@ -350,17 +370,22 @@ def leader_row(x, right, y, key, value, fs):
     """
     cw = fs * 0.6
     label = f"{key}:"
+    # Live stats get stable ids so update_stats.py can rewrite just the number
+    # in place, the way Andrew6rant's today.py does.
+    sid = STAT_IDS.get(key)
+    vid = f' id="{sid}_data"' if sid else ""
+    lid = f' id="{sid}_leader"' if sid else ""
     out = [
         f'<text x="{x:.1f}" y="{y:.1f}" font-size="{fs}" xml:space="preserve">'
         f'<tspan fill="{LEADER}">. </tspan>'
         f'<tspan fill="{KEY}" font-weight="700">{esc(label)}</tspan></text>',
-        f'<text x="{right:.1f}" y="{y:.1f}" font-size="{fs}" '
+        f'<text{vid} x="{right:.1f}" y="{y:.1f}" font-size="{fs}" '
         f'text-anchor="end" fill="{VALUE}">{esc(value)}</text>',
     ]
     x1 = x + (len(label) + 2) * cw + 6
     x2 = right - len(str(value)) * cw - 6
     if x2 > x1 + 6:
-        out.append(f'<line x1="{x1:.1f}" y1="{y - fs * 0.30:.1f}" '
+        out.append(f'<line{lid} x1="{x1:.1f}" y1="{y - fs * 0.30:.1f}" '
                    f'x2="{x2:.1f}" y2="{y - fs * 0.30:.1f}" '
                    f'stroke="{LEADER}" stroke-width="1.4" '
                    f'stroke-dasharray="1.4 4.2" stroke-linecap="round"/>')

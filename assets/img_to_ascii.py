@@ -17,11 +17,18 @@ import argparse
 from PIL import Image, ImageOps, ImageEnhance
 
 # Dense -> sparse. More rungs = smoother gradient.
-RAMP = "@%#WM*ozc+i!;:,.'` "
+# "sparse" ends in a space, so light areas drop out and the portrait floats.
+# "filled" has no space, so the background renders as ':'/'.' and the art is a
+# solid textured block with visible edges.
+RAMPS = {
+    "sparse": "@%#WM*ozc+i!;:,.'` ",
+    "filled": "@%#*+=-:.",
+}
 CHAR_ASPECT = 0.5  # row squash factor for monospace
 
 
-def to_ascii(path: str, width: int, invert: bool, contrast: float) -> str:
+def to_ascii(path: str, width: int, invert: bool, contrast: float,
+             ramp_name: str = "sparse") -> str:
     img = Image.open(path).convert("L")
     img = ImageOps.autocontrast(img, cutoff=2)
     if contrast != 1.0:
@@ -31,15 +38,18 @@ def to_ascii(path: str, width: int, invert: bool, contrast: float) -> str:
     img = img.resize((width, new_h))
     px = img.getdata()
 
-    ramp = RAMP[::-1] if invert else RAMP
+    base = RAMPS[ramp_name]
+    ramp = base[::-1] if invert else base
     n = len(ramp) - 1
+    keep_trailing = " " not in base      # 'filled' must keep its background
     rows = []
     for row in range(new_h):
         line = []
         for col in range(width):
             v = px[row * width + col]           # 0..255
             line.append(ramp[int(v / 255 * n)])
-        rows.append("".join(line).rstrip())
+        joined = "".join(line)
+        rows.append(joined if keep_trailing else joined.rstrip())
     return "\n".join(rows)
 
 
@@ -50,9 +60,12 @@ def main():
     ap.add_argument("--out", default="assets/portrait.txt")
     ap.add_argument("--invert", action="store_true")
     ap.add_argument("--contrast", type=float, default=1.15)
+    ap.add_argument("--ramp", choices=sorted(RAMPS), default="sparse",
+                    help="'sparse' drops the background out; "
+                         "'filled' renders it as ':' for a solid block")
     a = ap.parse_args()
 
-    art = to_ascii(a.image, a.width, a.invert, a.contrast)
+    art = to_ascii(a.image, a.width, a.invert, a.contrast, a.ramp)
     with open(a.out, "w", encoding="utf-8") as f:
         f.write(art + "\n")
     lines = art.count("\n") + 1

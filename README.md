@@ -1,8 +1,14 @@
 <!--
   anp-exe/anp-exe  —  profile README
-  The terminal readout is a generated SVG (assets/terminal.svg + terminal_light.svg).
-  Edit content in the PROFILE list in assets/generate_readme.py, not here.
-  Stats auto-refresh via .github/workflows/terminal-stats.yml (GITHUB_TOKEN only).
+  The terminal readout is assets/terminal.svg (dark) + terminal_light.svg (light).
+  Those two files are the SOURCE OF TRUTH for the layout and the ASCII art —
+  edit them directly, including hand-tuning the art.
+
+  assets/update_stats.py rewrites only the stat numbers, in place, by element id.
+  That is what .github/workflows/terminal-stats.yml runs twice a day.
+
+  assets/generate_readme.py REBUILDS both SVGs from scratch and will wipe any
+  hand edits to the art. Only run it to change the layout.
 
   If the card ever looks stale after a push: GitHub proxies README images
   through camo and caches them per-URL, so the same filename can keep serving
