@@ -29,15 +29,22 @@
 <img src="./assets/melody.png" width="190" alt="My Melody">
 
 <a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=github,python,pycharm,pytorch,scikitlearn,matlab,aws,obsidian,apple,figma&perline=3" alt="Skills: GitHub, Python, PyCharm, PyTorch, scikit-learn, MATLAB, AWS, Obsidian, Apple, Figma">
+  <img src="https://skillicons.dev/icons?i=github,python,pycharm,pytorch,scikitlearn,matlab,aws,obsidian,apple,figma,linkedin&perline=3" alt="Skills: GitHub, Python, PyCharm, PyTorch, scikit-learn, MATLAB, AWS, Obsidian, Apple, Figma, LinkedIn">
 </a>
 
 <a href="https://medium.com/@Joy-P/i-was-the-only-woman-playing-among-50-or-100-men-fc39f6fedbe5">
   <img src="https://img.shields.io/badge/Featured%20on%20Medium-12100E?style=for-the-badge&logo=medium&logoColor=white" alt="Featured on Medium — “I was the only woman playing among 50 or 100 men”">
 </a>
 
-<a href="https://www.linkedin.com/in/anp-exe/">
-  <img src="https://skillicons.dev/icons?i=linkedin" width="48" alt="LinkedIn — anp-exe">
+<!--
+  Credly badge. If the image ever fails to load, swap the src for the URL
+  Credly itself advertises in the badge page's og:image tag:
+  https://images.credly.com/images/4d4693bb-530e-4bca-9327-de07f3aa2348/linkedin_thumb_image.png
+  (that one is a wide LinkedIn thumbnail, so it will need a bigger width).
+  The badge must stay Public in Credly or it won't render for visitors.
+-->
+<a href="https://www.credly.com/badges/f2462771-efa4-4541-ac13-a0cec2dcbae7/public_url">
+  <img src="https://images.credly.com/size/340x340/images/4d4693bb-530e-4bca-9327-de07f3aa2348/image.png" width="70" alt="AWS Certified AI Practitioner — verify on Credly">
 </a>
 
   </td>
