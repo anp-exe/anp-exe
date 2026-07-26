@@ -60,7 +60,11 @@ OUT_SVG_LIGHT = ROOT / "terminal_light.svg"  # light variant
 # ---- portrait source -----------------------------------------------------
 # "ascii"  -> tint portrait.txt in the terminal palette (the Andrew6rant look)
 # "photo"  -> embed IMAGE_FILE directly, no ASCII conversion at all
-PORTRAIT_MODE = os.environ.get("PORTRAIT_MODE", "photo")
+# "none"   -> text only. Use this when the artwork lives in README.md instead,
+#             which is required for anything that must load an external image
+#             (skillicons badges, shields.io) - an SVG served as an <img>
+#             cannot fetch external resources, so those can never go in here.
+PORTRAIT_MODE = os.environ.get("PORTRAIT_MODE", "none")
 
 # Image used when PORTRAIT_MODE == "photo". Drop your file in assets/ and name
 # it here. First one that exists wins, so the build never breaks on a missing
@@ -462,7 +466,11 @@ def build_svg(stats):
     info_w = ROW_CHARS * cw
 
     # ---- portrait sizing -------------------------------------------------
-    if use_img:
+    if PORTRAIT_MODE == "none":
+        art_w = art_h = 0.0
+        portrait, pfs, plh, p_cols = [], 0, 0, 0
+        img_b64 = img_mime = ""
+    elif use_img:
         iw, ih = image_size(IMAGE_FILE)
         # Image height as a fraction of the text column's height. A mascot
         # wants to be much smaller than a full-bleed ASCII portrait, so this
@@ -502,8 +510,8 @@ def build_svg(stats):
                                      # since width is no longer pinned
         art_h = p_rows * plh
 
-    gap = 54
-    if ART_LAYOUT == "stacked":
+    gap = 0 if PORTRAIT_MODE == "none" else 54
+    if ART_LAYOUT == "stacked" and PORTRAIT_MODE != "none":
         info_x = left_x
         info_r = info_x + info_w
         W = int(max(art_w, info_w) + pad * 2)
@@ -522,7 +530,9 @@ def build_svg(stats):
     S.append(f'<rect x="0" y="0" width="{W}" height="{H}" rx="14" fill="{BG}"/>')
 
     # ---- portrait --------------------------------------------------------
-    if ART_LAYOUT == "stacked":
+    if PORTRAIT_MODE == "none":
+        top = info_top = pad
+    elif ART_LAYOUT == "stacked":
         top = pad
         info_top = pad + art_h + gap
     else:
@@ -530,7 +540,9 @@ def build_svg(stats):
         body_h = max(art_h, info_h)
         top = pad + (body_h - art_h) / 2
         info_top = pad + (body_h - info_h) / 2
-    if use_img:
+    if PORTRAIT_MODE == "none":
+        pass
+    elif use_img:
         S.append(f'<clipPath id="pclip"><rect x="{left_x}" y="{top}" '
                  f'width="{art_w:.1f}" height="{art_h:.1f}" rx="8"/></clipPath>')
         S.append(f'<image x="{left_x}" y="{top}" width="{art_w:.1f}" '
