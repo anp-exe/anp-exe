@@ -89,7 +89,7 @@ THEME_PAIR = ("dark", "light")
 
 THEMES = {
     "dark": dict(
-        KEY="#ffa657", HEADC="#c9d1d9",
+        KEY="#ffb9cf", HEADC="#c9d1d9",
         ART="#adbac7",
         BG="#0d1117", PANEL="#161b22", BAR="#161b22", STROKE="#30363d",
         DIM="#8b949e", LEADER="#30363d", VALUE="#c9d1d9",
@@ -97,7 +97,7 @@ THEMES = {
         DOTS=["#ff5f57", "#febc2e", "#28c840"],
     ),
     "light": dict(
-        KEY="#bc4c00", HEADC="#1f2328",
+        KEY="#cc3363", HEADC="#1f2328",
         ART="#57606a",
         BG="#ffffff", PANEL="#f6f8fa", BAR="#f6f8fa", STROKE="#d0d7de",
         DIM="#656d76", LEADER="#d0d7de", VALUE="#1f2328",
