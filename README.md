@@ -32,15 +32,26 @@
   <tr>
     <td width="26%" valign="top" align="center">
 
-<img src="./assets/melody.png" width="160" alt="My Melody">
+<!--
+  Each item is wrapped in its own <div>. <img> and <a> are INLINE elements, so
+  blank lines between them do nothing — they flow side by side and only break
+  when a row runs out of width. That is why the small badges ended up next to
+  each other. The <div>s force one per line.
+-->
 
-<a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=github,python,pycharm,pytorch,scikitlearn,matlab,aws,obsidian,apple,figma,linkedin&perline=3" alt="Skills: GitHub, Python, PyCharm, PyTorch, scikit-learn, MATLAB, AWS, Obsidian, Apple, Figma, LinkedIn">
-</a>
+<div><img src="./assets/melody.png" width="160" alt="My Melody"></div>
 
-<a href="https://medium.com/@Joy-P/i-was-the-only-woman-playing-among-50-or-100-men-fc39f6fedbe5">
-  <img src="https://img.shields.io/badge/Featured%20on%20Medium-12100E?style=for-the-badge&logo=medium&logoColor=white" alt="Featured on Medium — “I was the only woman playing among 50 or 100 men”">
-</a>
+<div>
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=github,python,pycharm,pytorch,scikitlearn,matlab,aws,obsidian,apple,figma,linkedin&perline=3" alt="Skills: GitHub, Python, PyCharm, PyTorch, scikit-learn, MATLAB, AWS, Obsidian, Apple, Figma, LinkedIn">
+  </a>
+</div>
+
+<div>
+  <a href="https://medium.com/@Joy-P/i-was-the-only-woman-playing-among-50-or-100-men-fc39f6fedbe5">
+    <img src="https://img.shields.io/badge/Featured%20on%20Medium-12100E?style=for-the-badge&logo=medium&logoColor=white" alt="Featured on Medium — “I was the only woman playing among 50 or 100 men”">
+  </a>
+</div>
 
 <!--
   Credly badge. If the image ever fails to load, swap the src for the URL
@@ -49,11 +60,13 @@
   (that one is a wide LinkedIn thumbnail, so it will need a bigger width).
   The badge must stay Public in Credly or it won't render for visitors.
 -->
-<a href="https://www.credly.com/badges/f2462771-efa4-4541-ac13-a0cec2dcbae7/public_url">
-  <img src="https://images.credly.com/size/340x340/images/4d4693bb-530e-4bca-9327-de07f3aa2348/image.png" width="70" alt="AWS Certified AI Practitioner — verify on Credly">
-</a>
+<div>
+  <a href="https://www.credly.com/badges/f2462771-efa4-4541-ac13-a0cec2dcbae7/public_url">
+    <img src="https://images.credly.com/size/340x340/images/4d4693bb-530e-4bca-9327-de07f3aa2348/image.png" width="70" alt="AWS Certified AI Practitioner — verify on Credly">
+  </a>
+</div>
 
-<img src="./assets/strawb.png" width="90" alt="">
+<div><img src="./assets/strawb.png" width="90" alt=""></div>
 
   </td>
   <td width="74%" valign="top">
