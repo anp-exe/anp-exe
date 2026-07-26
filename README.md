@@ -29,7 +29,7 @@
 <img src="./assets/melody.png" width="190" alt="My Melody">
 
 <a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=github,python,pytorch,scikitlearn,aws&perline=3" alt="Skills: GitHub, Python, PyTorch, scikit-learn, AWS">
+  <img src="https://skillicons.dev/icons?i=github,python,pycharm,pytorch,scikitlearn,aws&perline=3" alt="Skills: GitHub, Python, PyCharm, PyTorch, scikit-learn, AWS">
 </a>
 
 <a href="https://medium.com/@Joy-P/i-was-the-only-woman-playing-among-50-or-100-men-fc39f6fedbe5">
