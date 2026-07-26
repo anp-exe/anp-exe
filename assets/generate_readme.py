@@ -311,7 +311,7 @@ ROW_CHARS = 64          # nominal width of the info column, in characters
 #   ART_SCALE - vertical room the art gets, as a multiple of the text
 #               column height. Raise it so a high column count still
 #               renders at a legible glyph size.
-ART_SCALE = 1.30
+ART_SCALE = 1.06
 
 
 def stats_rows(stats):
@@ -420,7 +420,8 @@ def build_svg(stats):
         plh = (info_h * ART_SCALE) / p_rows
         pfs = max(3.0, min(20.0, plh / 1.2))
         plh = pfs * 1.2
-        art_w = p_cols * pfs * 0.6
+        art_w = p_cols * pfs * 0.62   # 0.62 not 0.60: safety margin,
+                                     # since width is no longer pinned
         art_h = p_rows * plh
 
     gap = 54
@@ -450,15 +451,19 @@ def build_svg(stats):
                  f'href="data:image/png;base64,{img_b64}"/>')
     else:
         # Flat tint in the terminal palette - no white box, no border.
-        # Each line is padded to the full column count and pinned to art_w
-        # with textLength, so the art can never spill into the text column
-        # no matter which font the viewer resolves.
+        #
+        # Deliberately NO textLength here. Pinning each line to a fixed width
+        # looks like it should guarantee the art can't overflow, but renderers
+        # ignore trailing whitespace when measuring a string: sparse lines
+        # (mostly spaces, a few glyphs) measure short and then get stretched
+        # to reach the pinned width, while dense lines already fill it. The
+        # result is a portrait whose top rows are smeared wide and whose
+        # bottom rows are correct. Natural monospace advance is the fix.
         S.append(f'<g fill="{ART}" font-size="{pfs:.2f}" xml:space="preserve" '
                  f'style="white-space:pre">')
         for i, line in enumerate(portrait):
-            S.append(f'<text x="{left_x}" y="{top + (i + 1) * plh:.1f}" '
-                     f'textLength="{art_w:.1f}" lengthAdjust="spacingAndGlyphs">'
-                     f'{esc(line.ljust(p_cols))}</text>')
+            S.append(f'<text x="{left_x}" y="{top + (i + 1) * plh:.1f}">'
+                     f'{esc(line)}</text>')
         S.append("</g>")
 
     # ---- info column -----------------------------------------------------
