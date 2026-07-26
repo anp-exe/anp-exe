@@ -59,8 +59,24 @@ OUT_SVG_LIGHT = ROOT / "terminal_light.svg"  # light variant
 
 # ---- portrait source -----------------------------------------------------
 # "ascii"  -> tint portrait.txt in the terminal palette (the Andrew6rant look)
-# "photo"  -> embed portrait.png as a greyscale image box
-PORTRAIT_MODE = os.environ.get("PORTRAIT_MODE", "ascii")
+# "photo"  -> embed IMAGE_FILE directly, no ASCII conversion at all
+PORTRAIT_MODE = os.environ.get("PORTRAIT_MODE", "photo")
+
+# Image used when PORTRAIT_MODE == "photo". Drop your file in assets/ and name
+# it here. First one that exists wins, so the build never breaks on a missing
+# file. PNG is safest: an animated GIF will not animate once it's embedded in
+# an SVG that GitHub serves as an <img>.
+IMAGE_CANDIDATES = ["melody.png", "melody.jpg", "melody.gif", "portrait.png"]
+IMAGE_FILE = next((ROOT / n for n in IMAGE_CANDIDATES if (ROOT / n).exists()),
+                  ROOT / IMAGE_CANDIDATES[-1])
+
+MIME = {".png": "image/png", ".jpg": "image/jpeg", ".jpeg": "image/jpeg",
+        ".gif": "image/gif", ".webp": "image/webp", ".svg": "image/svg+xml"}
+
+# How tall the image is, as a fraction of the text column's height.
+# 1.0 = same height as all the text. Lower = smaller. This is the one number
+# to change if Melody looks too big or too small.
+IMAGE_SCALE = 0.35
 
 # ---- palettes ------------------------------------------------------------
 # THEME_PAIR picks which two get rendered: (dark file, light file).
@@ -331,7 +347,15 @@ ROW_CHARS = 64          # nominal width of the info column, in characters
 #   ART_SCALE - vertical room the art gets, as a multiple of the text
 #               column height. Raise it so a high column count still
 #               renders at a legible glyph size.
-ART_SCALE = 1.06
+ART_SCALE = 1.35
+
+# "side"    -> art beside the text. Art is capped to the text column's height,
+#              so keep it near 64 columns or the glyphs get too small to read.
+# "stacked" -> art on its own full-width row, text underneath. Use this for
+#              high-resolution art (200+ columns): the art reads as a
+#              photographic halftone while the body text stays legible.
+ART_LAYOUT = "side"
+ART_TARGET_W = 1360.0     # rendered width of the art, SVG units (stacked only)
 
 
 def stats_rows(stats):
@@ -354,6 +378,18 @@ def png_size(path):
     with open(path, "rb") as f:
         head = f.read(24)
     return struct.unpack(">II", head[16:24])
+
+
+def image_size(path):
+    """(width, height) for any image. Uses Pillow when available so JPG/GIF
+    work too, and falls back to the PNG header so this file keeps running
+    with nothing installed."""
+    try:
+        from PIL import Image
+        with Image.open(path) as im:
+            return im.size
+    except Exception:
+        return png_size(path)
 
 
 def esc(s):
@@ -427,10 +463,14 @@ def build_svg(stats):
 
     # ---- portrait sizing -------------------------------------------------
     if use_img:
-        iw, ih = png_size(PORTRAIT_IMG)
-        art_w = 300.0
-        art_h = art_w * ih / iw
-        img_b64 = base64.b64encode(PORTRAIT_IMG.read_bytes()).decode()
+        iw, ih = image_size(IMAGE_FILE)
+        # Image height as a fraction of the text column's height. A mascot
+        # wants to be much smaller than a full-bleed ASCII portrait, so this
+        # has its own knob rather than reusing ART_SCALE.
+        art_h = info_h * IMAGE_SCALE
+        art_w = art_h * iw / ih
+        img_b64 = base64.b64encode(IMAGE_FILE.read_bytes()).decode()
+        img_mime = MIME.get(IMAGE_FILE.suffix.lower(), "image/png")
         portrait, pfs, plh, p_cols = [], 0, 0, 0
     else:
         portrait = (PORTRAIT_FILE.read_text(encoding="utf-8").rstrip("\n").split("\n")
@@ -442,18 +482,37 @@ def build_svg(stats):
         # Rows are pre-squashed 0.5x, so lh = 1.2 * fontsize.
         # ART_SCALE > 1 buys the art extra vertical room, which is how you get
         # a high column count AND glyphs that are still big enough to read.
-        plh = (info_h * ART_SCALE) / p_rows
-        pfs = max(3.0, min(20.0, plh / 1.2))
-        plh = pfs * 1.2
+        if ART_LAYOUT == "stacked":
+            # Art gets its own full-width row, so size it by WIDTH and let the
+            # height fall out. This is the only way a high column count keeps
+            # its detail: side by side, fitting art + text across GitHub's
+            # ~870px display width squeezes the body font under 7px.
+            pfs = ART_TARGET_W / (p_cols * 0.62)
+            plh = pfs * 1.2
+        else:
+            # Scale the art to the HEIGHT of the info column, not a fixed width:
+            # sizing a tall portrait by width makes it tower over the text.
+            # Rows are pre-squashed 0.5x, so lh = 1.2 * fontsize.
+            # ART_SCALE > 1 buys the art extra vertical room, which is how you
+            # get a high column count AND glyphs still big enough to read.
+            plh = (info_h * ART_SCALE) / p_rows
+            pfs = max(3.0, min(20.0, plh / 1.2))
+            plh = pfs * 1.2
         art_w = p_cols * pfs * 0.62   # 0.62 not 0.60: safety margin,
                                      # since width is no longer pinned
         art_h = p_rows * plh
 
     gap = 54
-    info_x = left_x + art_w + gap
-    info_r = info_x + info_w
-    W = int(info_r + pad)
-    H = int(max(art_h, info_h) + pad * 2)
+    if ART_LAYOUT == "stacked":
+        info_x = left_x
+        info_r = info_x + info_w
+        W = int(max(art_w, info_w) + pad * 2)
+        H = int(art_h + gap + info_h + pad * 2)
+    else:
+        info_x = left_x + art_w + gap
+        info_r = info_x + info_w
+        W = int(info_r + pad)
+        H = int(max(art_h, info_h) + pad * 2)
 
     S = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" '
          f'viewBox="0 0 {W} {H}" font-family="ui-monospace,SFMono-Regular,'
@@ -463,17 +522,21 @@ def build_svg(stats):
     S.append(f'<rect x="0" y="0" width="{W}" height="{H}" rx="14" fill="{BG}"/>')
 
     # ---- portrait --------------------------------------------------------
-    # Whichever column is shorter gets centred against the taller one.
-    body_h = max(art_h, info_h)
-    top = pad + (body_h - art_h) / 2
-    info_top = pad + (body_h - info_h) / 2
+    if ART_LAYOUT == "stacked":
+        top = pad
+        info_top = pad + art_h + gap
+    else:
+        # Whichever column is shorter gets centred against the taller one.
+        body_h = max(art_h, info_h)
+        top = pad + (body_h - art_h) / 2
+        info_top = pad + (body_h - info_h) / 2
     if use_img:
         S.append(f'<clipPath id="pclip"><rect x="{left_x}" y="{top}" '
                  f'width="{art_w:.1f}" height="{art_h:.1f}" rx="8"/></clipPath>')
         S.append(f'<image x="{left_x}" y="{top}" width="{art_w:.1f}" '
                  f'height="{art_h:.1f}" clip-path="url(#pclip)" '
-                 f'preserveAspectRatio="xMidYMid slice" '
-                 f'href="data:image/png;base64,{img_b64}"/>')
+                 f'preserveAspectRatio="xMidYMid meet" '
+                 f'href="data:{img_mime};base64,{img_b64}"/>')
     else:
         # Flat tint in the terminal palette - no white box, no border.
         #

@@ -28,8 +28,16 @@ CHAR_ASPECT = 0.5  # row squash factor for monospace
 
 
 def to_ascii(path: str, width: int, invert: bool, contrast: float,
-             ramp_name: str = "sparse") -> str:
+             ramp_name: str = "sparse", crop: str = "") -> str:
     img = Image.open(path).convert("L")
+    if crop:
+        # Fractions of the image: "left,top,right,bottom".
+        # Cropped BEFORE autocontrast so the stretch is computed on the region
+        # you keep. A square-ish crop is what lets high-detail art sit beside
+        # the text column instead of towering over it.
+        l, t, r, b = (float(v) for v in crop.split(","))
+        w, h = img.size
+        img = img.crop((int(l * w), int(t * h), int(r * w), int(b * h)))
     img = ImageOps.autocontrast(img, cutoff=2)
     if contrast != 1.0:
         img = ImageEnhance.Contrast(img).enhance(contrast)
@@ -63,9 +71,12 @@ def main():
     ap.add_argument("--ramp", choices=sorted(RAMPS), default="sparse",
                     help="'sparse' drops the background out; "
                          "'filled' renders it as ':' for a solid block")
+    ap.add_argument("--crop", default="",
+                    help='fractional crop "left,top,right,bottom", '
+                         'e.g. "0,0,1,0.77" for a square crop of a 360x468 image')
     a = ap.parse_args()
 
-    art = to_ascii(a.image, a.width, a.invert, a.contrast, a.ramp)
+    art = to_ascii(a.image, a.width, a.invert, a.contrast, a.ramp, a.crop)
     with open(a.out, "w", encoding="utf-8") as f:
         f.write(art + "\n")
     lines = art.count("\n") + 1
