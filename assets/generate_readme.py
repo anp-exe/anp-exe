@@ -10,7 +10,14 @@ Auth:  uses GITHUB_TOKEN from the environment ONLY. Nothing is committed.
        Runs fine with no token too -- it falls back to the cached numbers
        so you can preview locally.
 
-Outputs: assets/terminal.svg  (+ refreshes assets/stats_cache.json)
+Outputs: assets/terminal.svg, assets/terminal_light.svg
+         (+ refreshes assets/stats_cache.json)
+
+Portrait detail: regenerate the ASCII at a different column count with
+    python3 assets/img_to_ascii.py assets/portrait.png --width 76 --contrast 1.25
+Current art is 64 cols x 49 rows. Going much finer than that shrinks the
+glyphs below ~9px, where the face stops reading and turns into a grey mass.
+Pair a higher column count with a higher ART_SCALE to keep glyphs legible.
 """
 import base64
 import json
@@ -36,21 +43,67 @@ ROOT = Path(__file__).resolve().parent          # assets/
 PORTRAIT_FILE = ROOT / "portrait.txt"           # ASCII fallback
 PORTRAIT_IMG = ROOT / "portrait.png"            # embedded photo (preferred)
 CACHE_FILE = ROOT / "stats_cache.json"
-OUT_SVG = ROOT / "terminal.svg"
+OUT_SVG = ROOT / "terminal.svg"            # dark variant
+OUT_SVG_LIGHT = ROOT / "terminal_light.svg"  # light variant
 
-# ---- monochrome palette: white / grey on near-black ----------------------
-BG          = "#0a0a0a"   # near-black
-PANEL       = "#111111"   # slightly lifted panel
-BAR         = "#161616"   # window titlebar
-STROKE      = "#2b2b2b"   # panel border
-DIM         = "#8a8a8a"   # grey (labels)
-LEADER      = "#333333"   # leader dots
-VALUE       = "#f2f2f2"   # near-white (values)
-ACCENT      = "#ffffff"   # white accent / headings
-PINK        = "#ffffff"   # white (prompt / headings)
-LILAC       = "#b8b8b8"   # soft grey secondary
-GREENish    = "#dddddd"
-DOTS        = ["#4d4d4d", "#808080", "#b3b3b3"]  # grayscale traffic lights
+# ---- portrait source -----------------------------------------------------
+# "ascii"  -> tint portrait.txt in the terminal palette (the Andrew6rant look)
+# "photo"  -> embed portrait.png as a greyscale image box
+PORTRAIT_MODE = os.environ.get("PORTRAIT_MODE", "ascii")
+
+# ---- palettes ------------------------------------------------------------
+# THEME_PAIR picks which two get rendered: (dark file, light file).
+# Swap to ("mono_dark", "mono_light") for the all-greyscale version.
+THEME_PAIR = ("dark", "light")
+
+THEMES = {
+    "dark": dict(
+        KEY="#ffa657", HEADC="#c9d1d9",
+        ART="#adbac7",
+        BG="#0d1117", PANEL="#161b22", BAR="#161b22", STROKE="#30363d",
+        DIM="#8b949e", LEADER="#30363d", VALUE="#c9d1d9",
+        ACCENT="#7ee787", PINK="#79c0ff", LILAC="#d2a8ff",
+        DOTS=["#ff5f57", "#febc2e", "#28c840"],
+    ),
+    "light": dict(
+        KEY="#bc4c00", HEADC="#1f2328",
+        ART="#57606a",
+        BG="#ffffff", PANEL="#f6f8fa", BAR="#f6f8fa", STROKE="#d0d7de",
+        DIM="#656d76", LEADER="#d0d7de", VALUE="#1f2328",
+        ACCENT="#1a7f37", PINK="#0969da", LILAC="#8250df",
+        DOTS=["#ff5f57", "#febc2e", "#28c840"],
+    ),
+    "mono_dark": dict(
+        KEY="#ffffff", HEADC="#f2f2f2",
+        ART="#b8b8b8",
+        BG="#0a0a0a", PANEL="#111111", BAR="#161616", STROKE="#2b2b2b",
+        DIM="#8a8a8a", LEADER="#333333", VALUE="#f2f2f2",
+        ACCENT="#ffffff", PINK="#ffffff", LILAC="#b8b8b8",
+        DOTS=["#4d4d4d", "#808080", "#b3b3b3"],
+    ),
+    "mono_light": dict(
+        KEY="#000000", HEADC="#141414",
+        ART="#5a5a5a",
+        BG="#ffffff", PANEL="#f7f7f7", BAR="#f0f0f0", STROKE="#d8d8d8",
+        DIM="#6b6b6b", LEADER="#cccccc", VALUE="#141414",
+        ACCENT="#000000", PINK="#000000", LILAC="#5a5a5a",
+        DOTS=["#c9c9c9", "#a6a6a6", "#8a8a8a"],
+    ),
+}
+
+# Live palette globals - reassigned by apply_theme() before each render.
+BG = PANEL = BAR = STROKE = DIM = LEADER = VALUE = ACCENT = PINK = LILAC = ART = KEY = HEADC = ""
+DOTS = []
+
+
+def apply_theme(name):
+    """Point the module-level colour names at one of the THEMES."""
+    global BG, PANEL, BAR, STROKE, DIM, LEADER, VALUE, ACCENT, PINK, LILAC, DOTS, ART, KEY, HEADC
+    t = THEMES[name]
+    BG, PANEL, BAR, STROKE = t["BG"], t["PANEL"], t["BAR"], t["STROKE"]
+    DIM, LEADER, VALUE = t["DIM"], t["LEADER"], t["VALUE"]
+    ACCENT, PINK, LILAC, DOTS = t["ACCENT"], t["PINK"], t["LILAC"], t["DOTS"]
+    ART, KEY, HEADC = t["ART"], t["KEY"], t["HEADC"]
 
 # ---- monospace geometry --------------------------------------------------
 CW = 6.6        # char width  @ 11px mono (portrait)
@@ -218,28 +271,58 @@ def human(n):
 
 
 # --------------------------------------------------------------------------
-# static profile data (the info block)
+# content  --  edit your details here
 # --------------------------------------------------------------------------
-INFO_SECTIONS = [
-    [
-        ("Subject",   "Anna Parker"),
-        ("Role",      "BSc AI & Philosophy @ KCL (2026-2029)"),
-        ("Origin",    "London, UK"),
-        ("Status",    "Building * Learning * Shipping"),
-        ("ToolChain", "JetBrains, Git, MkDocs, GH Actions"),
-    ],
-    [
-        ("Core",      "Python, C++"),
-        ("Data",      "pandas, NumPy, matplotlib"),
-        ("Web",       "HTML/CSS, JS, GitHub Pages"),
-        ("Focus",     "Data journalism, ML maths, AI ethics"),
-        ("Certs",     "AWS Certified AI Practitioner"),
-    ],
+# Row kinds:
+#   ("user", name)            -> "anna@anp-exe ---------------------"
+#   ("head", label)           -> "- Contact ------------------------"
+#   ("row",  key, value)      -> ". Key: ................... value"
+#   ("pair", k1, v1, k2, v2)  -> ". K1: ..... v1   . K2: ..... v2"
+#   ("blank",)                -> spacer
+PROFILE = [
+    ("user", f"anna@{USER}"),
+    ("row", "OS", "macOS"),
+    ("row", "Role", "BSc AI & Philosophy @ KCL (2026-2029)"),
+    ("row", "Location", "London, UK"),
+    ("row", "IDE", "PyCharm, JetBrains Suite"),
+    ("row", "Toolchain", "Git, MkDocs, GitHub Actions"),
+    ("blank",),
+    ("row", "Languages", "Python"),
+    ("row", "Libraries.Data", "pandas, NumPy"),
+    ("row", "Libraries.ML", "scikit-learn, PyTorch"),
+    ("row", "Libraries.Viz", "matplotlib, seaborn"),
+    ("blank",),
+    ("row", "Focus.Research", "Data journalism, ML maths"),
+    ("row", "Focus.Ethics", "AI safety and AI ethics"),
+    ("row", "Certs", "AWS Certified AI Practitioner"),
+    ("blank",),
+    ("head", "Contact"),
+    ("row", "Portfolio", "anp-exe.github.io/anna"),
+    ("row", "GitHub", USER),
+    ("row", "LinkedIn", "anp-exe"),
 ]
-CONTACT = [
-    ("Portfolio", "anp-exe.github.io/anna"),
-    ("GitHub",    "anp-exe"),
-]
+
+STATS_HEADER = "GitHub Stats"
+ROW_CHARS = 64          # nominal width of the info column, in characters
+
+# Detail of the ASCII portrait.
+#   ART_COLS  - regenerate portrait.txt at this width for more/less detail:
+#               python3 assets/img_to_ascii.py assets/portrait.png --width N
+#   ART_SCALE - vertical room the art gets, as a multiple of the text
+#               column height. Raise it so a high column count still
+#               renders at a legible glyph size.
+ART_SCALE = 1.30
+
+
+def stats_rows(stats):
+    return [
+        ("blank",),
+        ("head", STATS_HEADER),
+        ("pair", "Repos", human(stats["repos"]), "Stars", human(stats["stars"])),
+        ("pair", "Commits", human(stats["commits"]),
+                 "Followers", human(stats["followers"])),
+        ("row", "Lines of Code on GitHub", human(stats["loc"])),
+    ]
 
 
 # --------------------------------------------------------------------------
@@ -257,194 +340,142 @@ def esc(s):
     return escape(str(s), quote=True)
 
 
-def text(x, y, s, fill, fs=INFO_FS, weight="400", cls="", extra=""):
-    c = f' class="{cls}"' if cls else ""
-    return (f'<text x="{x:.1f}" y="{y:.1f}" fill="{fill}" '
-            f'font-size="{fs}" font-weight="{weight}"{c}{extra}>{esc(s)}</text>')
+def leader_row(x, right, y, key, value, fs):
+    """`. Key: ........... value`, with the value flush to `right`.
 
-
-def leader_row(x, y, label, value, width_chars=46):
-    """label ... value  with three coloured tspans on one baseline."""
-    dots = max(3, VALUE_COL - len(label))
-    dot_str = " " + ("." * (dots - 1)) + " "
-    pad_after = width_chars - VALUE_COL - len(value)
-    parts = [
-        f'<text x="{x:.1f}" y="{y:.1f}" font-size="{INFO_FS}" xml:space="preserve">',
-        f'<tspan fill="{DIM}">{esc(label)}</tspan>',
-        f'<tspan fill="{LEADER}">{esc(dot_str)}</tspan>',
-        f'<tspan fill="{VALUE}">{esc(value)}</tspan>',
-        "</text>",
+    Alignment is GEOMETRIC, not character-counted: the key is anchored left,
+    the value is anchored right, and the gap is bridged by a dashed <line>.
+    That way the columns stay aligned even if the viewer substitutes a
+    non-monospace font - which is exactly what broke the old version.
+    """
+    cw = fs * 0.6
+    label = f"{key}:"
+    out = [
+        f'<text x="{x:.1f}" y="{y:.1f}" font-size="{fs}" xml:space="preserve">'
+        f'<tspan fill="{LEADER}">. </tspan>'
+        f'<tspan fill="{KEY}" font-weight="700">{esc(label)}</tspan></text>',
+        f'<text x="{right:.1f}" y="{y:.1f}" font-size="{fs}" '
+        f'text-anchor="end" fill="{VALUE}">{esc(value)}</text>',
     ]
-    return "".join(parts)
+    x1 = x + (len(label) + 2) * cw + 6
+    x2 = right - len(str(value)) * cw - 6
+    if x2 > x1 + 6:
+        out.append(f'<line x1="{x1:.1f}" y1="{y - fs * 0.30:.1f}" '
+                   f'x2="{x2:.1f}" y2="{y - fs * 0.30:.1f}" '
+                   f'stroke="{LEADER}" stroke-width="1.4" '
+                   f'stroke-dasharray="1.4 4.2" stroke-linecap="round"/>')
+    return "".join(out)
+
+
+def pair_row(x, right, y, k1, v1, k2, v2, fs):
+    mid = x + (right - x) / 2
+    return (leader_row(x, mid - 16, y, k1, v1, fs)
+            + leader_row(mid + 8, right, y, k2, v2, fs))
+
+
+def rule_row(x, right, y, label, fs, lead=""):
+    """`anna@anp-exe --------` / `- Contact --------`, rule drawn as a line."""
+    cw = fs * 0.6
+    txt = f"{lead}{label}"
+    out = [f'<text x="{x:.1f}" y="{y:.1f}" font-size="{fs}" fill="{HEADC}" '
+           f'font-weight="700" xml:space="preserve">{esc(txt)}</text>']
+    x1 = x + (len(txt) + 1) * cw + 4
+    if right > x1 + 8:
+        out.append(f'<line x1="{x1:.1f}" y1="{y - fs * 0.30:.1f}" '
+                   f'x2="{right:.1f}" y2="{y - fs * 0.30:.1f}" '
+                   f'stroke="{STROKE}" stroke-width="1.4"/>')
+    return "".join(out)
 
 
 def build_svg(stats):
-    # Prefer an embedded photo (assets/portrait.png); fall back to ASCII.
-    use_img = PORTRAIT_IMG.exists()
+    use_img = PORTRAIT_MODE == "photo" and PORTRAIT_IMG.exists()
 
-    pad = 26
-    bar_h = 34
+    pad = 30
+    fs = 15.0
+    lh = 22.0
+    cw = fs * 0.6
     left_x = pad
 
+    rows = PROFILE + stats_rows(stats)
+    info_h = len(rows) * lh
+    info_w = ROW_CHARS * cw
+
+    # ---- portrait sizing -------------------------------------------------
     if use_img:
         iw, ih = png_size(PORTRAIT_IMG)
-        img_w = 285.0
-        img_h = img_w * ih / iw
+        art_w = 300.0
+        art_h = art_w * ih / iw
         img_b64 = base64.b64encode(PORTRAIT_IMG.read_bytes()).decode()
-        portrait_h = img_h + 24            # + room for caption
-        info_x = max(left_x + img_w + 60, 360)
-        portrait = []
-        pfs = plh = 0
+        portrait, pfs, plh, p_cols = [], 0, 0, 0
     else:
-        portrait = PORTRAIT_FILE.read_text(encoding="utf-8").rstrip("\n").split("\n") \
-            if PORTRAIT_FILE.exists() else PLACEHOLDER_PORTRAIT.split("\n")
+        portrait = (PORTRAIT_FILE.read_text(encoding="utf-8").rstrip("\n").split("\n")
+                    if PORTRAIT_FILE.exists() else PLACEHOLDER_PORTRAIT.split("\n"))
         p_rows = len(portrait)
         p_cols = max(len(l) for l in portrait)
-        # auto-size font so any column count fits a target width; rows were
-        # pre-squashed 0.5x, so line-height ~= 1.2*fontsize keeps proportions.
-        target_pw = 430.0
-        pfs = min(11.0, max(4.2, target_pw / (p_cols * 0.6)))
+        # Scale the art to the HEIGHT of the info column, not a fixed width:
+        # sizing a tall portrait by width makes it tower over the text.
+        # Rows are pre-squashed 0.5x, so lh = 1.2 * fontsize.
+        # ART_SCALE > 1 buys the art extra vertical room, which is how you get
+        # a high column count AND glyphs that are still big enough to read.
+        plh = (info_h * ART_SCALE) / p_rows
+        pfs = max(3.0, min(20.0, plh / 1.2))
         plh = pfs * 1.2
-        portrait_w = p_cols * pfs * 0.6
-        info_x = max(left_x + portrait_w + 64, 360)
-        portrait_h = p_rows * plh
+        art_w = p_cols * pfs * 0.6
+        art_h = p_rows * plh
 
-    info_lines = (sum(len(s) for s in INFO_SECTIONS)
-                  + len(INFO_SECTIONS)      # blank line between sections
-                  + 2                       # "Contact:" header + blank
-                  + len(CONTACT) + 1)
-    info_h = info_lines * INFO_LH
-    body_h = max(portrait_h, info_h) + 24
+    gap = 54
+    info_x = left_x + art_w + gap
+    info_r = info_x + info_w
+    W = int(info_r + pad)
+    H = int(max(art_h, info_h) + pad * 2)
 
-    stats_h = 150
-    W = int(info_x + 46 * INFO_CW + pad)
-    W = max(W, 900)
-    H = int(bar_h + 20 + body_h + stats_h + pad)
+    S = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" '
+         f'viewBox="0 0 {W} {H}" font-family="ui-monospace,SFMono-Regular,'
+         f"'DejaVu Sans Mono','JetBrains Mono','Cascadia Code',Menlo,"
+         f"Consolas,'Liberation Mono',monospace\">"]
 
-    S = []
-    S.append(
-        f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" '
-        f'viewBox="0 0 {W} {H}" font-family="\'JetBrains Mono\',\'Fira Code\','
-        f"'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace\">")
+    S.append(f'<rect x="0" y="0" width="{W}" height="{H}" rx="14" fill="{BG}"/>')
 
-    # defs: glow + berry gradient for portrait
-    S.append(f'''<defs>
-  <linearGradient id="berry" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0" stop-color="{PINK}"/>
-    <stop offset="0.55" stop-color="{ACCENT}"/>
-    <stop offset="1" stop-color="{LILAC}"/>
-  </linearGradient>
-  <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-    <feGaussianBlur stdDeviation="0.6" result="b"/>
-    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-  </filter>
-  <filter id="gray">
-    <feColorMatrix type="saturate" values="0"/>
-    <feComponentTransfer><feFuncA type="linear" slope="1"/></feComponentTransfer>
-  </filter>
-  <pattern id="scan" width="1" height="3" patternUnits="userSpaceOnUse">
-    <rect width="1" height="3" fill="#000000" opacity="0"/>
-    <rect width="1" height="1" fill="#000000" opacity="0.16"/>
-  </pattern>
-</defs>''')
-
-    # window
-    S.append(f'<rect x="0" y="0" width="{W}" height="{H}" rx="12" fill="{BG}"/>')
-    S.append(f'<rect x="0.5" y="0.5" width="{W-1}" height="{H-1}" rx="12" '
-             f'fill="none" stroke="{STROKE}"/>')
-    S.append(f'<rect x="0" y="0" width="{W}" height="{bar_h}" rx="12" fill="{BAR}"/>')
-    S.append(f'<rect x="0" y="{bar_h-12}" width="{W}" height="12" fill="{BAR}"/>')
-    for i, c in enumerate(DOTS):
-        S.append(f'<circle cx="{22+i*20}" cy="{bar_h/2:.0f}" r="6" fill="{c}"/>')
-    S.append(text(96, bar_h/2 + 4, f"{stats['user']}@github: ~/profile — neofetch",
-                  DIM, fs=12))
-
-    # ---- portrait -------------------------------------------------------
-    py0 = bar_h + 26
+    # ---- portrait --------------------------------------------------------
+    # Whichever column is shorter gets centred against the taller one.
+    body_h = max(art_h, info_h)
+    top = pad + (body_h - art_h) / 2
+    info_top = pad + (body_h - info_h) / 2
     if use_img:
-        ix, iy0 = left_x, py0 - 12
-        r = 6
-        S.append(f'<clipPath id="pclip"><rect x="{ix:.1f}" y="{iy0:.1f}" '
-                 f'width="{img_w:.1f}" height="{img_h:.1f}" rx="{r}"/></clipPath>')
-        S.append(f'<image x="{ix:.1f}" y="{iy0:.1f}" width="{img_w:.1f}" '
-                 f'height="{img_h:.1f}" clip-path="url(#pclip)" '
-                 f'preserveAspectRatio="xMidYMid slice" filter="url(#gray)" '
+        S.append(f'<clipPath id="pclip"><rect x="{left_x}" y="{top}" '
+                 f'width="{art_w:.1f}" height="{art_h:.1f}" rx="8"/></clipPath>')
+        S.append(f'<image x="{left_x}" y="{top}" width="{art_w:.1f}" '
+                 f'height="{art_h:.1f}" clip-path="url(#pclip)" '
+                 f'preserveAspectRatio="xMidYMid slice" '
                  f'href="data:image/png;base64,{img_b64}"/>')
-        # subtle scanlines + frame for the terminal feel
-        S.append(f'<rect x="{ix:.1f}" y="{iy0:.1f}" width="{img_w:.1f}" '
-                 f'height="{img_h:.1f}" rx="{r}" fill="url(#scan)" '
-                 f'clip-path="url(#pclip)"/>')
-        S.append(f'<rect x="{ix:.1f}" y="{iy0:.1f}" width="{img_w:.1f}" '
-                 f'height="{img_h:.1f}" rx="{r}" fill="none" stroke="{STROKE}"/>')
-        # corner brackets
-        cl = 14
-        for (cx, cy, dx, dy) in [
-            (ix, iy0, 1, 1), (ix + img_w, iy0, -1, 1),
-            (ix, iy0 + img_h, 1, -1), (ix + img_w, iy0 + img_h, -1, -1)]:
-            S.append(f'<path d="M {cx+dx*cl:.1f} {cy:.1f} L {cx:.1f} {cy:.1f} '
-                     f'L {cx:.1f} {cy+dy*cl:.1f}" fill="none" '
-                     f'stroke="{VALUE}" stroke-width="1.5"/>')
-        S.append(text(ix + 2, iy0 + img_h + 16, "> ./portrait --render",
-                      DIM, fs=11))
     else:
-        S.append(f'<g filter="url(#glow)" fill="url(#berry)" '
-                 f'font-size="{pfs:.2f}" letter-spacing="0" xml:space="preserve" '
+        # Flat tint in the terminal palette - no white box, no border.
+        # Each line is padded to the full column count and pinned to art_w
+        # with textLength, so the art can never spill into the text column
+        # no matter which font the viewer resolves.
+        S.append(f'<g fill="{ART}" font-size="{pfs:.2f}" xml:space="preserve" '
                  f'style="white-space:pre">')
         for i, line in enumerate(portrait):
-            y = py0 + i * plh
-            S.append(f'<text x="{left_x}" y="{y:.1f}">{esc(line)}</text>')
+            S.append(f'<text x="{left_x}" y="{top + (i + 1) * plh:.1f}" '
+                     f'textLength="{art_w:.1f}" lengthAdjust="spacingAndGlyphs">'
+                     f'{esc(line.ljust(p_cols))}</text>')
         S.append("</g>")
 
-    # ---- info block -----------------------------------------------------
-    iy = py0 + 6
-    S.append(text(info_x, iy, "> whoami --verbose", PINK, fs=INFO_FS, weight="700"))
-    iy += INFO_LH * 1.6
-    for si, section in enumerate(INFO_SECTIONS):
-        for label, value in section:
-            S.append(leader_row(info_x, iy, label, value))
-            iy += INFO_LH
-        iy += INFO_LH * 0.6
-    # contact
-    S.append(text(info_x, iy, "Contact:", ACCENT, fs=INFO_FS, weight="700"))
-    iy += INFO_LH
-    for label, value in CONTACT:
-        S.append(leader_row(info_x, iy, label, value))
-        iy += INFO_LH
-
-    # ---- live stats panel ----------------------------------------------
-    panel_y = bar_h + 20 + body_h
-    panel_x = pad
-    panel_w = W - pad * 2
-    S.append(f'<rect x="{panel_x}" y="{panel_y}" width="{panel_w}" '
-             f'height="{stats_h-16}" rx="8" fill="{PANEL}" stroke="{STROKE}"/>')
-    sx = panel_x + 22
-    sy = panel_y + 30
-    S.append(text(sx, sy, "> gh stats --live", PINK, fs=INFO_FS, weight="700"))
-    S.append(f'<text x="{panel_x + panel_w - 22:.1f}" y="{sy:.1f}" fill="{DIM}" '
-             f'font-size="11" text-anchor="end">updated {esc(stats["updated"])}</text>')
-    sy += INFO_LH * 1.4
-
-    rows = [
-        ("Repos",         human(stats["repos"])),
-        ("Commits",       human(stats["commits"])),
-        ("Stars",         human(stats["stars"])),
-        ("Followers",     human(stats["followers"])),
-        ("Lines of Code", human(stats["loc"])),
-    ]
-    col_w = (panel_w - 44) / len(rows)
-    for i, (label, value) in enumerate(rows):
-        cx = sx + i * col_w
-        S.append(text(cx, sy, label, DIM, fs=11))
-        S.append(text(cx, sy + 24, value, VALUE, fs=20, weight="700",
-                      extra=' filter="url(#glow)"'))
-
-    # blinking cursor / prompt line
-    cy = panel_y + stats_h - 18
-    S.append(text(sx, cy, f"{stats['user']}@github:~$ ", PINK, fs=INFO_FS))
-    cur_x = sx + len(f"{stats['user']}@github:~$ ") * INFO_CW
-    S.append(f'<rect x="{cur_x:.0f}" y="{cy-11:.0f}" width="9" height="15" '
-             f'fill="{PINK}"><animate attributeName="opacity" values="1;1;0;0" '
-             f'dur="1.06s" repeatCount="indefinite"/></rect>')
+    # ---- info column -----------------------------------------------------
+    y = info_top + lh
+    for r in rows:
+        kind = r[0]
+        if kind == "blank":
+            pass
+        elif kind == "user":
+            S.append(rule_row(info_x, info_r, y, r[1], fs))
+        elif kind == "head":
+            S.append(rule_row(info_x, info_r, y, r[1], fs, lead="- "))
+        elif kind == "row":
+            S.append(leader_row(info_x, info_r, y, r[1], r[2], fs))
+        elif kind == "pair":
+            S.append(pair_row(info_x, info_r, y, r[1], r[2], r[3], r[4], fs))
+        y += lh
 
     S.append("</svg>")
     return "\n".join(S)
@@ -479,9 +510,16 @@ def main():
     if stats is None:
         stats = load_cache()
 
-    svg = build_svg(stats)
-    OUT_SVG.write_text(svg, encoding="utf-8")
-    print(f"wrote {OUT_SVG}  ({len(svg)} bytes)")
+    # Always leave a cache file behind, so the workflow's `git add` step can
+    # never fail on a missing path.
+    if not CACHE_FILE.exists():
+        CACHE_FILE.write_text(json.dumps(stats, indent=2))
+
+    for theme, out in ((THEME_PAIR[0], OUT_SVG), (THEME_PAIR[1], OUT_SVG_LIGHT)):
+        apply_theme(theme)
+        svg = build_svg(stats)
+        out.write_text(svg, encoding="utf-8")
+        print(f"wrote {out.name}  ({len(svg)} bytes, theme={theme})")
 
 
 if __name__ == "__main__":
