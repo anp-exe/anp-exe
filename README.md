@@ -29,11 +29,15 @@
 <img src="./assets/melody.png" width="190" alt="My Melody">
 
 <a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=github,python,pycharm,pytorch,scikitlearn,aws&perline=3" alt="Skills: GitHub, Python, PyCharm, PyTorch, scikit-learn, AWS">
+  <img src="https://skillicons.dev/icons?i=github,python,pycharm,pytorch,scikitlearn,matlab,aws,obsidian,apple,figma&perline=3" alt="Skills: GitHub, Python, PyCharm, PyTorch, scikit-learn, MATLAB, AWS, Obsidian, Apple, Figma">
 </a>
 
 <a href="https://medium.com/@Joy-P/i-was-the-only-woman-playing-among-50-or-100-men-fc39f6fedbe5">
   <img src="https://img.shields.io/badge/Featured%20on%20Medium-12100E?style=for-the-badge&logo=medium&logoColor=white" alt="Featured on Medium — “I was the only woman playing among 50 or 100 men”">
+</a>
+
+<a href="https://www.linkedin.com/in/anp-exe/">
+  <img src="https://skillicons.dev/icons?i=linkedin" width="48" alt="LinkedIn — anp-exe">
 </a>
 
   </td>
