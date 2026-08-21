@@ -41,9 +41,18 @@
 
 <div><img src="./assets/melody.png" width="160" alt="My Melody"></div>
 
+<!--
+  The whole grid is ONE image, so every icon in it shares the single
+  skillicons.dev link — you cannot make one tile point somewhere else. Anything
+  that needs its own destination has to be a separate badge below.
+
+  git + githubactions were added to keep the count at 12 so perline=3 fills
+  four even rows. Drop any two of them if you would rather have ten.
+-->
+
 <div>
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=github,python,pycharm,pytorch,scikitlearn,matlab,aws,obsidian,apple,figma,linkedin&perline=3" alt="Skills: GitHub, Python, PyCharm, PyTorch, scikit-learn, MATLAB, AWS, Obsidian, Apple, Figma, LinkedIn">
+    <img src="https://skillicons.dev/icons?i=github,python,pycharm,pytorch,scikitlearn,matlab,aws,obsidian,apple,figma,git,githubactions&perline=3" alt="Skills: GitHub, Python, PyCharm, PyTorch, scikit-learn, MATLAB, AWS, Obsidian, Apple, Figma, Git, GitHub Actions">
   </a>
 </div>
 
