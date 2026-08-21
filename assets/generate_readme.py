@@ -313,7 +313,7 @@ def human(n):
 PROFILE = [
     ("user", f"anna@{USER}"),
     ("row", "OS", "macOS"),
-    ("row", "Role", "BSc AI & Philosophy @ KCL (2026-2029)"),
+    ("row", "Role", "BSc AI & Philosophy @ KCL '29"),
     ("row", "Location", "London, UK"),
     ("row", "IDE", "PyCharm, JetBrains Suite"),
     ("row", "Toolchain", "Git, MkDocs, GitHub Actions"),
