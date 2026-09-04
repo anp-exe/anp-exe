@@ -62,6 +62,7 @@
   </a>
 </div>
 
+<a href="https://wakatime.com/@35133f69-5a7e-41cc-9dd8-e83831d9e4f0"><img src="https://wakatime.com/badge/user/35133f69-5a7e-41cc-9dd8-e83831d9e4f0.svg" alt="Total time coded since Jan 20 2026" /></a>
 <!--
   Credly badge. If the image ever fails to load, swap the src for the URL
   Credly itself advertises in the badge page's og:image tag:
