@@ -328,7 +328,7 @@ PROFILE = [
     ("row", "Certs", "AWS Certified AI Practitioner"),
     ("blank",),
     ("head", "Contact"),
-    ("row", "Portfolio", "anp-exe.github.io/anna"),
+    ("row", "Portfolio", "anna-p.info"),
     ("row", "GitHub", USER),
     ("row", "LinkedIn", "anp-exe"),
 ]
