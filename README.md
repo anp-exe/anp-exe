@@ -19,5 +19,4 @@
 
 > [!IMPORTANT]
 > Take a look at my projects below.
->
-> Institutional inquiries: [annabelle.parker@kcl.ac.uk](mailto:annabelle.parker@kcl.ac.uk)
+
