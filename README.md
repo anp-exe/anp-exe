@@ -10,7 +10,6 @@
 <br>
 <a href="https://anna-p.info"><img src="./assets/stickers/portfolio.svg" height="48" alt="Portfolio: anna-p.info"></a>
 <a href="mailto:anna.andrea.parker@icloud.com"><img src="./assets/stickers/email.svg" height="48" alt="Email me"></a>
-<a href="https://www.credly.com/badges/f2462771-efa4-4541-ac13-a0cec2dcbae7/public_url"><img src="./assets/stickers/aws.svg" height="48" alt="AWS Certified AI Practitioner, verify on Credly"></a>
 <a href="https://medium.com/@Joy-P/i-was-the-only-woman-playing-among-50-or-100-men-fc39f6fedbe5"><img src="./assets/stickers/press.svg" height="48" alt="In the press: 1 in 9 on Medium"></a>
 </p>
 
@@ -18,4 +17,7 @@
   <img src="./assets/cat-board-anim.svg" width="300" alt="Pixel calico cat asleep on its back on a chessboard">
 </p>
 
-<p align="center">Take a look at my projects below</p>
+> [!IMPORTANT]
+> Take a look at my projects below.
+>
+> Institutional inquiries: [annabelle.parker@kcl.ac.uk](mailto:annabelle.parker@kcl.ac.uk)
