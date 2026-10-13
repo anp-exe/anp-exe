@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://anna-p.info"><img src="./assets/lanyard.svg?v=8" width="300" alt="Pixel intern lanyard: Anna, KCL '29, with King's College London and AWS AI Practitioner stickers and skill icons"></a>
+  <a href="https://anna-p.info"><img src="./assets/lanyard.svg?v=9" width="300" alt="Pixel intern lanyard: Anna, KCL '29, with King's College London and AWS AI Practitioner stickers and skill icons"></a>
 </p>
 
 <p align="center">
@@ -14,7 +14,7 @@
 </p>
 
 <p align="center">
-  <img src="./assets/cat-board-anim.svg?v=2" width="300" alt="Pixel calico cat curled up asleep on a chessboard">
+  <img src="./assets/cat-board-anim.svg?v=3" width="300" alt="Pixel calico cat curled up asleep on a chessboard">
 </p>
 
 <p align="center">
