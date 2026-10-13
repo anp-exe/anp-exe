@@ -14,13 +14,12 @@
 </p>
 
 <p align="center">
-  <img src="./assets/cat-board-anim.svg" width="300" alt="Pixel calico cat curled up asleep on a chessboard">
+  <img src="./assets/cat-board-anim.svg?v=2" width="300" alt="Pixel calico cat curled up asleep on a chessboard">
 </p>
 
 <p align="center">
   <a href="https://wakatime.com/@35133f69-5a7e-41cc-9dd8-e83831d9e4f0"><img src="https://wakatime.com/badge/user/35133f69-5a7e-41cc-9dd8-e83831d9e4f0.svg" alt="wakatime"></a>
 </p>
 
-> [!IMPORTANT]
-> Take a look at my projects below.
+
 
