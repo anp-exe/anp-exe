@@ -9,7 +9,7 @@
 <a href="https://www.kaggle.com/anpexe"><img src="./assets/stickers/kaggle.svg" height="48" alt="Kaggle"></a>
 <br>
 <a href="https://anna-p.info"><img src="./assets/stickers/portfolio.svg" height="48" alt="Portfolio: anna-p.info"></a>
-<a href="mailto:anna.andrea.parker@icloud.com"><img src="./assets/stickers/email.svg" height="48" alt="Email me"></a>
+<a href="https://www.codedex.io/@anp-exe"><img src="./assets/stickers/codedex.svg" height="48" alt="Codédex"></a>
 <a href="https://medium.com/@Joy-P/i-was-the-only-woman-playing-among-50-or-100-men-fc39f6fedbe5"><img src="./assets/stickers/press.svg" height="48" alt="In the press: 1 in 9 on Medium"></a>
 </p>
 
