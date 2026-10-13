@@ -14,7 +14,7 @@
 </p>
 
 <p align="center">
-  <img src="./assets/cat-board-anim.svg" width="300" alt="Pixel calico cat asleep on its back on a chessboard">
+  <img src="./assets/cat-board-anim.svg" width="300" alt="Pixel calico cat curled up asleep on a chessboard">
 </p>
 
 > [!IMPORTANT]
